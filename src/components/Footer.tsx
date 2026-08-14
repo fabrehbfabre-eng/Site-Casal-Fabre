@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-white/60 leading-relaxed max-w-sm font-light">
-              Conteúdo editorial sobre relacionamentos, comunicação, cumplicidade e princípios para o fortalecimento da vida a dois por Heberson e Kátia Fabre.
+              Conteúdo editorial sobre relacionamentos, comunicação, cumplicidade e princípios para o fortalecimento da vida a dois por Heberson e Katia Fabre.
             </p>
           </div>
 

@@ -75,7 +75,7 @@ export default function ProductPresentation() {
           </p>
           <div className="w-16 h-[1px] bg-[#C5A059] mx-auto mt-4 mb-2" />
           <span className="text-xs uppercase tracking-[0.25em] text-[#E5C78A] font-medium">
-            Heberson & Kátia Fabre
+            Heberson & Katia Fabre
           </span>
         </div>
 
