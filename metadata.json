@@ -1,0 +1,6 @@
+{
+  "name": "O Prazer da Vida a Dois | Casal Fabre",
+  "description": "Landing page premium e editorial para o ebook O Prazer da Vida a Dois por Heberson e Kátia Fabre.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
