@@ -55,19 +55,16 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* Pricing Box & Primary CTA */}
+            {/* Offer Highlights Box */}
             <div className="w-full max-w-lg bg-[#0F261E]/90 border border-[#C5A059]/30 rounded-2xl p-6 shadow-2xl backdrop-blur-sm space-y-4 text-left">
-              <div className="flex items-baseline justify-between border-b border-white/10 pb-3">
+              <div className="flex items-center justify-between border-b border-white/10 pb-3">
                 <div>
-                  <span className="text-xs uppercase tracking-wider text-white/60 font-medium block">
+                  <span className="text-xs uppercase tracking-wider text-[#E5C78A] font-bold block">
                     Oferta de Lançamento
                   </span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-3xl sm:text-4xl font-bold font-editorial text-[#E5C78A]">
-                      {PRODUCT_CONFIG.formattedPrice}
-                    </span>
-                    <span className="text-xs text-white/60">pagamento único</span>
-                  </div>
+                  <span className="text-xs text-white/70">
+                    Edição Digital Oficial Completa
+                  </span>
                 </div>
                 <div className="text-right">
                   <span className="inline-block px-2.5 py-1 rounded bg-[#1C3E2F] border border-[#C5A059]/40 text-[#E5C78A] text-[11px] font-semibold tracking-wide">
@@ -76,27 +73,15 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Main Button */}
-              <a
-                id="hero-primary-cta"
-                href={PRODUCT_CONFIG.checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-3 py-4 px-8 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#DFBE7A] to-[#C5A059] text-[#081711] font-bold text-base uppercase tracking-wider shadow-lg hover:shadow-2xl hover:shadow-[#C5A059]/30 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200"
-              >
-                <span>{PRODUCT_CONFIG.primaryCtaText}</span>
-                <ArrowRight className="w-5 h-5" />
-              </a>
-
-              {/* Microcopy Under Button */}
-              <div className="space-y-1.5 pt-1 text-[11px] sm:text-xs text-white/70">
-                <div className="flex items-center gap-2">
-                  <Zap className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                  <span>Acesso digital após a confirmação do pagamento</span>
+              {/* Highlights & Security Microcopy */}
+              <div className="space-y-2 pt-1 text-xs text-white/80">
+                <div className="flex items-center gap-2.5">
+                  <Zap className="w-4 h-4 text-[#C5A059] shrink-0" />
+                  <span>Acesso digital imediato e vitalício aos materiais em PDF</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                  <span>Pagamento processado com segurança | Garantia de 7 dias</span>
+                <div className="flex items-center gap-2.5">
+                  <ShieldCheck className="w-4 h-4 text-[#C5A059] shrink-0" />
+                  <span>Ambiente seguro | Garantia incondicional de 7 dias</span>
                 </div>
               </div>
             </div>

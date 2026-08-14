@@ -51,7 +51,7 @@ export default function App() {
         {/* Dobra 7: Os 6 Bônus Inclusos no Pacote */}
         <BonusesSection />
 
-        {/* Dobra 8: Seção de Oferta do Pacote Completo (R$ 19,97) */}
+        {/* Dobra 8: Seção de Oferta do Pacote Completo */}
         <OfferSection />
 
         {/* Dobra 9: Sobre o Casal Fabre (Heberson & Katia Fabre) */}

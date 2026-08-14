@@ -1,7 +1,5 @@
 import React from 'react';
-import { PRODUCT_CONFIG } from '../config/offer';
-import BookMockup from './BookMockup';
-import { ShieldCheck, Zap, CheckCircle2, ArrowRight, Sparkles, Lock, CreditCard } from 'lucide-react';
+import { ShieldCheck, Zap, CheckCircle2, Sparkles, Lock } from 'lucide-react';
 
 export default function OfferSection() {
   const packageItems = [
@@ -73,48 +71,40 @@ export default function OfferSection() {
 
             </div>
 
-            {/* Right: Price Tag & Main Button */}
-            <div className="lg:col-span-5 bg-[#081711] border border-[#C5A059]/40 rounded-2xl p-6 sm:p-8 text-center space-y-5 shadow-xl">
+            {/* Right: Format Details & Guarantees Container */}
+            <div className="lg:col-span-5 bg-[#081711] border border-[#C5A059]/40 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl flex flex-col justify-between">
               
-              <div className="space-y-1">
-                <span className="text-xs uppercase tracking-widest text-white/60 font-semibold block">
-                  Valor Único de Acesso:
-                </span>
-                <div className="flex items-baseline justify-center gap-1.5">
-                  <span className="text-4xl sm:text-5xl font-bold font-editorial text-[#E5C78A]">
-                    {PRODUCT_CONFIG.formattedPrice}
+              <div className="space-y-4">
+                <div className="text-center pb-4 border-b border-white/10">
+                  <span className="text-xs uppercase tracking-widest text-[#E5C78A] font-bold block mb-1">
+                    Edição Digital Oficial
                   </span>
+                  <p className="text-xs text-white/70 leading-relaxed">
+                    Conteúdo completo com livro principal, guias práticos e 6 bônus exclusivos.
+                  </p>
                 </div>
-                <span className="text-xs text-white/60 block">
-                  {PRODUCT_CONFIG.installmentsInfo}
-                </span>
+
+                {/* Trust & Access Highlights */}
+                <div className="space-y-3.5 text-xs text-white/80">
+                  <div className="flex items-start gap-3">
+                    <Zap className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
+                    <span>Acesso digital aos materiais em formato PDF de alta qualidade.</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <ShieldCheck className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
+                    <span>7 dias de garantia incondicional para leitura e aplicação.</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Lock className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
+                    <span>Ambiente com total segurança e privacidade.</span>
+                  </div>
+                </div>
               </div>
 
-              <a
-                id="offer-section-cta"
-                href={PRODUCT_CONFIG.checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 py-4 px-6 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#DFBE7A] to-[#C5A059] text-[#081711] font-bold text-sm sm:text-base uppercase tracking-wider shadow-lg hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-              >
-                <span>{PRODUCT_CONFIG.secondaryCtaText}</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
-
-              {/* Trust Indicators */}
-              <div className="pt-2 border-t border-white/10 space-y-2 text-[11px] text-white/70 text-left">
-                <div className="flex items-center gap-2">
-                  <Zap className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                  <span>Acesso digital após a confirmação do pagamento.</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Lock className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                  <span>Pagamento 100% criptografado e seguro via Kiwify.</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                  <span>{PRODUCT_CONFIG.guaranteeDays} dias de garantia incondicional.</span>
-                </div>
+              <div className="p-3.5 rounded-xl bg-[#132C21] border border-[#C5A059]/20 text-center">
+                <span className="text-[11px] text-[#E5C78A] font-medium tracking-wide uppercase block">
+                  Material Vitalício | Download Disponível
+                </span>
               </div>
 
             </div>
