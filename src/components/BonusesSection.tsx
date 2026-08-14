@@ -141,7 +141,7 @@ export default function BonusesSection() {
               <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059]" />
               <span>Garantia de 7 dias</span>
             </div>
-            <span>•</span>
+            <span className="text-white/30">|</span>
             <div className="flex items-center gap-1.5">
               <span>Acesso vitalício aos materiais</span>
             </div>

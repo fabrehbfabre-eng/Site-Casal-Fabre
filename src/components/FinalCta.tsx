@@ -39,7 +39,7 @@ export default function FinalCta() {
               {PRODUCT_CONFIG.formattedPrice}
             </div>
             <span className="text-xs text-white/60 block">
-              Pagamento único • Acesso vitalício imediato
+              Pagamento único | Acesso vitalício imediato
             </span>
           </div>
 

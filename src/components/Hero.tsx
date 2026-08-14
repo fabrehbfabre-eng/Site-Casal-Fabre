@@ -25,7 +25,7 @@ export default function Hero() {
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#132C21] border border-[#C5A059]/30 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
               <Sparkles className="w-3.5 h-3.5 text-[#E5C78A]" />
               <span className="text-xs font-semibold uppercase tracking-widest text-[#E5C78A]">
-                Ebook Oficial • Casal Fabre
+                Ebook Oficial | Casal Fabre
               </span>
             </div>
 
@@ -96,7 +96,7 @@ export default function Hero() {
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
-                  <span>Pagamento processado com segurança • Garantia de 7 dias</span>
+                  <span>Pagamento processado com segurança | Garantia de 7 dias</span>
                 </div>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function Hero() {
               <div className="w-full flex items-center justify-center">
                 <img
                   src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=708,fit=crop/YZ9j7Zz5nNsVj0vb/capa-nova-u0tAbsFjBdWmpA3R.png"
-                  alt="O Prazer da Vida a Dois - Casal Fabre - Heberson Fabre"
+                  alt="O Prazer da Vida a Dois | Casal Fabre | Heberson Fabre"
                   className="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl select-none"
                   loading="eager"
                   referrerPolicy="no-referrer"

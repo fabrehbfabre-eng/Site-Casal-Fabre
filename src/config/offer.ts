@@ -14,12 +14,12 @@ export const PRODUCT_CONFIG = {
   price: "19,97",
   currency: "R$",
   formattedPrice: "R$ 19,97",
-  installmentsInfo: "Pagamento único • Acesso imediato",
+  installmentsInfo: "Pagamento único | Acesso imediato",
   checkoutUrl: KIWIFY_CHECKOUT_URL,
   guaranteeDays: 7,
   chaptersCount: 12,
   bonusesCount: 6,
-  supportEmail: "contato@casalfabre.com.br",
+  supportEmail: "faleconosco@casalfabre.com.br",
   
   authorsBio: "Somos Heberson e Katia Fabre, o Casal Fabre. Compartilhamos nossa história, nossas experiências e nossa visão sobre relacionamento, amor, fé e vida a dois.",
   

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PRODUCT_CONFIG } from '../config/offer';
-import { Heart, ShieldCheck, Lock, ArrowUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 
 export default function Footer() {
   const [modalType, setModalType] = useState<'termos' | 'privacidade' | null>(null);
@@ -85,11 +85,6 @@ export default function Footer() {
             >
               {PRODUCT_CONFIG.supportEmail}
             </a>
-
-            <div className="pt-2 flex items-center gap-2 text-xs text-white/60">
-              <Lock className="w-3.5 h-3.5 text-[#C5A059]" />
-              <span>Checkout seguro Kiwify</span>
-            </div>
           </div>
 
         </div>
@@ -97,7 +92,7 @@ export default function Footer() {
         {/* Bottom Legal & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-white/50">
           <div>
-            © {new Date().getFullYear()} Casal Fabre — {PRODUCT_CONFIG.name}. Todos os direitos reservados.
+            © 2022 Casal Fabre | O Prazer da Vida a Dois | Todos os direitos reservados.
           </div>
 
           {/* Legal Links */}
@@ -108,7 +103,7 @@ export default function Footer() {
             >
               Termos de Uso
             </button>
-            <span>•</span>
+            <span className="text-white/30">|</span>
             <button
               onClick={() => setModalType('privacidade')}
               className="hover:text-white transition-colors cursor-pointer"

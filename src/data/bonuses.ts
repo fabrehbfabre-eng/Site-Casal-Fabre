@@ -5,7 +5,7 @@ export const BONUSES_DATA: BonusItem[] = [
     id: 1,
     number: "BÔNUS 01",
     title: "Como Reacender a Paixão",
-    description: "Do 'Passear de mãos dadas' ao 'Diga eu te amo' - técnicas para transformar o cotidiano em reconexão.",
+    description: "Do 'Passear de mãos dadas' ao 'Diga eu te amo': técnicas para transformar o cotidiano em reconexão.",
     imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=235,h=406,fit=crop/Aq2vLRz2KwTrpz11/como-reacender-a-paixao-AQEZpbxrwQiMBx31.png",
     focus: "Intimidade & Atração",
     format: "Guia Digital"

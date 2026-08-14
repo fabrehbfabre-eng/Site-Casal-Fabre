@@ -35,3 +35,12 @@ export interface InsideBookFeature {
   description: string;
   example: string;
 }
+
+export interface TestimonialItem {
+  id: number;
+  name: string;
+  book: string;
+  rating: number;
+  comment: string;
+  avatarUrl: string;
+}

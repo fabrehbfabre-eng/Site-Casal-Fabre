@@ -87,7 +87,7 @@ export default function AboutAuthors() {
                   CASAL FABRE
                 </span>
                 <span className="text-xs text-white/70 block leading-tight">
-                  Vida a Dois • Amor • Fé
+                  Vida a Dois | Amor & Fé
                 </span>
               </div>
 
@@ -121,7 +121,7 @@ export default function AboutAuthors() {
                 </p>
                 <div className="pt-2 text-right">
                   <span className="font-editorial text-sm sm:text-base font-semibold text-[#E5C78A] tracking-wide">
-                    — Heberson & Katia Fabre
+                    Heberson & Katia Fabre
                   </span>
                 </div>
               </div>

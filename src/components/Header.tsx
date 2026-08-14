@@ -55,7 +55,7 @@ export default function Header() {
               Casal Fabre
             </span>
             <span className="text-[10px] tracking-[0.25em] text-[#C5A059] uppercase font-medium">
-              Vida a Dois • Amor & Fé
+              Vida a Dois | Amor & Fé
             </span>
           </div>
         </a>

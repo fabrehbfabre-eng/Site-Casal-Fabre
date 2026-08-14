@@ -98,7 +98,7 @@ export default function InsideBookPreview() {
                 <span className="font-editorial text-xs font-bold text-[#8C6D2D] uppercase tracking-widest">
                   O PRAZER DA VIDA A DOIS
                 </span>
-                <span className="text-[#8C6D2D]">•</span>
+                <span className="text-[#8C6D2D] font-light">|</span>
                 <span className="text-[11px] text-[#5C6E65]">Capítulo 01</span>
               </div>
               <span className="text-[10px] font-mono text-[#8C6D2D]">Pág. 18</span>
@@ -117,7 +117,7 @@ export default function InsideBookPreview() {
                   O que acontece quando deixamos de andar lado a lado?
                 </h3>
                 <p className="text-sm sm:text-base text-[#3A4B42] leading-relaxed">
-                  "No início do relacionamento, andar de mãos dadas é instintivo. Mas, com o passar dos anos e o acúmulo de compromissos, passamos a andar um na frente e outro atrás — tanto na rua quanto nas decisões da vida. Andar de mãos dadas não é apenas um gesto físico, é a decisão diária de desacelerar o próprio passo para caminhar no mesmo ritmo do outro."
+                  "No início do relacionamento, andar de mãos dadas é instintivo. Mas, com o passar dos anos e o acúmulo de compromissos, passamos a andar um na frente e outro atrás, tanto na rua quanto nas decisões da vida. Andar de mãos dadas não é apenas um gesto físico, é a decisão diária de desacelerar o próprio passo para caminhar no mesmo ritmo do outro."
                 </p>
                 <div className="bg-[#F0EAE1] p-4 rounded-lg border-l-4 border-[#8C6D2D] text-xs sm:text-sm text-[#23352B]">
                   <strong>Ponto de Consciência:</strong> Você tem andado no mesmo ritmo do seu parceiro ou tem corrido na frente esperando que ele acompanhe sozinho?

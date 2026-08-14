@@ -100,7 +100,7 @@ export default function ChaptersSection() {
                   <span className="font-editorial text-2xl font-bold text-[#E5C78A]">
                     Capítulo {activeChapter.number}
                   </span>
-                  <span className="text-white/30">•</span>
+                  <span className="text-white/30">|</span>
                   <span className="text-xs uppercase tracking-wider text-white/70 font-medium">
                     {activeChapter.theme}
                   </span>

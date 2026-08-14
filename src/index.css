@@ -59,3 +59,24 @@
     inset -4px 0 8px rgba(0, 0, 0, 0.4),
     inset 2px 0 4px rgba(255, 255, 255, 0.15);
 }
+
+/* Continuous Marquee Animation: Left to Right */
+@keyframes marquee-right {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.animate-marquee-right {
+  display: flex;
+  width: max-content;
+  animation: marquee-right 55s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}

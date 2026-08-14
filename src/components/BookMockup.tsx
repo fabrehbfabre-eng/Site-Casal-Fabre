@@ -83,7 +83,7 @@ export default function BookMockup({
                   <div className="w-full h-full rounded-full overflow-hidden bg-[#0A1B14] relative">
                     <img
                       src={customImage || PRODUCT_CONFIG.images.coupleRealPhoto}
-                      alt="Casal Fabre - Heberson e Katia Fabre"
+                      alt="Casal Fabre | Heberson e Katia Fabre"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.05]"
                     />

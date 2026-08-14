@@ -9,7 +9,7 @@ import Benefits from './components/Benefits';
 import BonusesSection from './components/BonusesSection';
 import OfferSection from './components/OfferSection';
 import AboutAuthors from './components/AboutAuthors';
-import SocialProofPlaceholder from './components/SocialProofPlaceholder';
+import SocialProof from './components/SocialProof';
 import GuaranteeSection from './components/GuaranteeSection';
 import FaqSection from './components/FaqSection';
 import FinalCta from './components/FinalCta';
@@ -57,8 +57,8 @@ export default function App() {
         {/* Dobra 9: Sobre o Casal Fabre (Heberson & Katia Fabre) */}
         <AboutAuthors />
 
-        {/* Dobra 10: Prova Social Transparente */}
-        <SocialProofPlaceholder />
+        {/* Dobra 10: Prova Social - Depoimentos de Leitores */}
+        <SocialProof />
 
         {/* Dobra 11: Garantia Incondicional de 7 Dias */}
         <GuaranteeSection />
