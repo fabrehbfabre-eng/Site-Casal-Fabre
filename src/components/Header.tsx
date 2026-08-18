@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, BookOpen, Sparkles, ShieldCheck, Heart } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -82,6 +83,7 @@ export default function Header() {
             href={PRODUCT_CONFIG.checkoutUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackInitiateCheckout('header_desktop')}
             className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#C5A059] via-[#D8B974] to-[#C5A059] text-[#081711] font-semibold text-xs uppercase tracking-wider shadow-md hover:shadow-xl hover:shadow-[#C5A059]/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
           >
             <span>{PRODUCT_CONFIG.ebookCtaText}</span>
@@ -121,6 +123,7 @@ export default function Header() {
               href={PRODUCT_CONFIG.checkoutUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackInitiateCheckout('header_mobile_drawer')}
               className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#D8B974] to-[#C5A059] text-[#081711] font-bold text-sm uppercase tracking-wider shadow-lg"
             >
               <span>{PRODUCT_CONFIG.primaryCtaText}</span>

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BookOpen, Sparkles, MessageCircle, Calendar, CheckCircle, ArrowRight, Quote } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function InsideBookPreview() {
   const [activeTab, setActiveTab] = useState<'reflexao' | 'conversa' | 'desafio'>('conversa');
@@ -197,6 +198,7 @@ export default function InsideBookPreview() {
               href={PRODUCT_CONFIG.checkoutUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackInitiateCheckout('inside_book_preview')}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#C5A059] text-[#081711] font-bold text-xs sm:text-sm uppercase tracking-wider hover:bg-[#DFBE7A] transition-all"
             >
               <span>GARANTIR MEU ACESSO AOS 12 CAPÍTULOS POR {PRODUCT_CONFIG.formattedPrice}</span>

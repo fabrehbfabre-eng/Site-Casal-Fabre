@@ -2,6 +2,7 @@ import React from 'react';
 import { BONUSES_DATA } from '../data/bonuses';
 import { PRODUCT_CONFIG } from '../config/offer';
 import { Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Gift } from 'lucide-react';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function BonusesSection() {
   return (
@@ -128,6 +129,7 @@ export default function BonusesSection() {
               href={PRODUCT_CONFIG.checkoutUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackInitiateCheckout('bonuses_section')}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 py-4 px-8 sm:px-10 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#DFBE7A] to-[#C5A059] text-[#081711] font-bold text-sm sm:text-base uppercase tracking-wider shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               <span>QUERO MEU EBOOK + 6 BÔNUS</span>

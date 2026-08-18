@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function GuaranteeSection() {
   return (
@@ -51,6 +52,7 @@ export default function GuaranteeSection() {
                 href={PRODUCT_CONFIG.checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackInitiateCheckout('guarantee_section')}
                 className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#E5C78A] hover:text-[#FAF8F5] transition-colors"
               >
                 <span>Adquira seu exemplar com garantia total</span>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
+import { Heart, MessageCircleHeart, Sparkles } from 'lucide-react';
+import { PRODUCT_CONFIG } from '../config/offer';
 
 export default function AboutAuthors() {
   return (
@@ -20,7 +21,7 @@ export default function AboutAuthors() {
           {/* Eyebrow Seal */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#132C21] border border-[#C5A059]/40 text-[#E5C78A] text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />
-            <span>QUEM ESTÁ POR TRÁS DO LIVRO</span>
+            <span>QUEM SOMOS • CASAL FABRE</span>
           </div>
 
           {/* Title */}
@@ -33,7 +34,7 @@ export default function AboutAuthors() {
 
           {/* Editorial Highlight Phrase */}
           <p className="font-serif italic text-lg sm:text-xl text-[#E5C78A] max-w-2xl mx-auto leading-relaxed">
-            &ldquo;Não acreditamos em relacionamentos perfeitos. Acreditamos em casais que escolhem cuidar um do outro todos os dias.&rdquo;
+            &ldquo;Não estamos falando de um relacionamento perfeito. Estamos falando de uma vida a dois real.&rdquo;
           </p>
         </header>
 
@@ -46,7 +47,7 @@ export default function AboutAuthors() {
               {/* Photo Frame with subtle gold border, rounded corners, and soft shadow */}
               <div className="relative rounded-2xl overflow-hidden border border-[#C5A059]/40 bg-[#050E0B] shadow-[0_20px_50px_rgba(0,0,0,0.65)] transition-transform duration-500 hover:scale-[1.01]">
                 <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=525,fit=crop/YZ9j7Zz5nNsVj0vb/casal-fabre-1-photoroom-f1cKR1RJdl44WCEn.png"
+                  src={PRODUCT_CONFIG.images.coupleRealPhoto}
                   alt="Heberson e Katia Fabre | Casal Fabre"
                   className="w-full h-auto object-contain select-none"
                   loading="lazy"
@@ -61,7 +62,7 @@ export default function AboutAuthors() {
             </div>
           </figure>
 
-          {/* Right Column: Narrative, Identity Indicators & Final Quote */}
+          {/* Right Column: Narrative, Pillars of Real Relationship & Final Quote */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Narrative Text */}
@@ -70,54 +71,60 @@ export default function AboutAuthors() {
                 Somos Heberson e Katia Fabre, o Casal Fabre.
               </p>
               <p>
-                Ao longo da nossa caminhada, percebemos que muitos relacionamentos não terminam por falta de amor. Muitas vezes, eles simplesmente deixam de receber a atenção, o diálogo, o carinho e a presença que fizeram parte do início da história.
+                Ao longo da nossa história, aprendemos que relacionamentos sólidos não nascem prontos — eles são construídos na convivência diária, no diálogo paciente e na decisão mútua de continuar escolhendo um ao outro.
               </p>
               <p>
-                Foi dessa experiência e desse desejo de ajudar outros casais que nasceu <em>O Prazer da Vida a Dois</em>.
+                Sabemos que a rotina, o cansaço e as responsabilidades podem criar um distanciamento silencioso. Muitas vezes não falta amor; falta presença, atenção e pequenos gestos que mantêm o carinho e o desejo vivos.
               </p>
               <p>
-                Este livro reúne princípios, reflexões e práticas simples para casais que desejam fortalecer a conexão, recuperar a cumplicidade e voltar a cuidar conscientemente da relação.
+                Foi a partir das nossas próprias vivências e reflexões sobre casamento que nasceu o livro <em>O Prazer da Vida a Dois</em>.
               </p>
             </div>
 
-            {/* 3 Identity Indicators */}
+            {/* 3 Real Relationship Pillars */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2 border-t border-white/10">
-              <div className="bg-[#0A1A14]/90 border border-[#C5A059]/20 rounded-xl p-3.5 text-center">
-                <span className="font-editorial text-xs font-bold uppercase tracking-wider text-[#E5C78A] block mb-0.5">
-                  CASAL FABRE
+              <div className="bg-[#0A1A14]/90 border border-[#C5A059]/20 rounded-xl p-4 text-center space-y-1.5">
+                <div className="flex justify-center text-[#C5A059]">
+                  <MessageCircleHeart className="w-5 h-5" />
+                </div>
+                <span className="font-editorial text-xs font-bold uppercase tracking-wider text-[#E5C78A] block">
+                  Diálogo & Escuta
                 </span>
-                <span className="text-xs text-white/70 block leading-tight">
-                  Vida a Dois | Amor & Fé
-                </span>
+                <p className="text-xs text-white/70 leading-relaxed font-light">
+                  Conversas francas que aproximam e dissolvem a distância silenciosa.
+                </p>
               </div>
 
-              <div className="bg-[#0A1A14]/90 border border-[#C5A059]/20 rounded-xl p-3.5 text-center">
-                <span className="font-editorial text-sm font-bold uppercase tracking-wider text-[#E5C78A] block mb-0.5">
-                  +22 LIVROS
+              <div className="bg-[#0A1A14]/90 border border-[#C5A059]/20 rounded-xl p-4 text-center space-y-1.5">
+                <div className="flex justify-center text-[#C5A059]">
+                  <Heart className="w-5 h-5" />
+                </div>
+                <span className="font-editorial text-xs font-bold uppercase tracking-wider text-[#E5C78A] block">
+                  Afeto & Desejo
                 </span>
-                <span className="text-xs text-white/70 block leading-tight">
-                  Experiência editorial de Heberson Fabre
-                </span>
+                <p className="text-xs text-white/70 leading-relaxed font-light">
+                  O toque, a admiração e a cumplicidade cultivados no dia a dia.
+                </p>
               </div>
 
-              <div className="bg-[#0A1A14]/90 border border-[#C5A059]/20 rounded-xl p-3.5 text-center">
-                <span className="font-editorial text-sm font-bold uppercase tracking-wider text-[#E5C78A] block mb-0.5">
-                  +4 MILHÕES
+              <div className="bg-[#0A1A14]/90 border border-[#C5A059]/20 rounded-xl p-4 text-center space-y-1.5">
+                <div className="flex justify-center text-[#C5A059]">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <span className="font-editorial text-xs font-bold uppercase tracking-wider text-[#E5C78A] block">
+                  Escolha Diária
                 </span>
-                <span className="text-xs text-white/70 block leading-tight">
-                  Pessoas alcançadas nas redes sociais
-                </span>
+                <p className="text-xs text-white/70 leading-relaxed font-light">
+                  A consciência de que cuidar da relação é um compromisso contínuo.
+                </p>
               </div>
             </div>
 
-            {/* Final Highlight Quote Block */}
+            {/* Final Connection Quote Block */}
             <div className="bg-[#0D2119]/90 border border-[#C5A059]/35 rounded-2xl p-6 sm:p-7 shadow-lg relative overflow-hidden backdrop-blur-sm">
               <div className="space-y-2.5">
                 <p className="text-sm sm:text-base text-[#FAF8F5]/90 font-light leading-relaxed">
-                  Este livro nasceu da experiência de quem acredita que o amor não precisa ser perfeito para ser profundo.
-                </p>
-                <p className="font-editorial text-lg sm:text-xl font-bold text-[#FAF8F5] leading-snug">
-                  Precisa ser cuidado.
+                  Este livro não nasceu para ensinar uma fórmula mágica ou um casamento perfeito. Ele nasceu para ajudar casais reais a resgatarem o olhar, o carinho e o prazer de caminhar juntos.
                 </p>
                 <div className="pt-2 text-right">
                   <span className="font-editorial text-sm sm:text-base font-semibold text-[#E5C78A] tracking-wide">

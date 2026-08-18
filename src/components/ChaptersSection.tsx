@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { CHAPTERS_DATA } from '../data/chapters';
 import { Sparkles, ChevronRight, CheckCircle2, HeartHandshake, BookOpen } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function ChaptersSection() {
   const [activeChapterIndex, setActiveChapterIndex] = useState(0);
@@ -173,6 +174,7 @@ export default function ChaptersSection() {
                 href={PRODUCT_CONFIG.checkoutUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackInitiateCheckout('chapters_section')}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#C5A059] to-[#DFBE7A] text-[#081711] font-bold text-xs uppercase tracking-wider hover:opacity-95 transition-opacity"
               >
                 <span>QUERO OS 12 CAPÍTULOS</span>

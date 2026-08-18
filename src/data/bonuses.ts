@@ -4,7 +4,7 @@ export const BONUSES_DATA: BonusItem[] = [
   {
     id: 1,
     number: "BÔNUS 01",
-    title: "Como Reacender a Paixão — Dia a Dia",
+    title: "Como Reacender a Paixão",
     description: "Técnicas e atitudes práticas para transformar a rotina do casal em reconexão, carinho e cumplicidade.",
     imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/como-reacender-a-paixapso-dia-a-dia-MPHQw4T0PKomLaib.png",
     focus: "Intimidade & Atração",
@@ -31,7 +31,7 @@ export const BONUSES_DATA: BonusItem[] = [
   {
     id: 4,
     number: "BÔNUS 04",
-    title: "Filhos de Outro Relacionamento — Como Lidar",
+    title: "Filhos de Outro Relacionamento | Como Lidar",
     description: "Como estabelecer limites saudáveis, cultivar respeito e criar harmonia familiar no dia a dia.",
     imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/filhos-de-outro-relacionamento_-como-lidar-d5DMb4jetjLnpClZ.png",
     focus: "Harmonia Familiar",
