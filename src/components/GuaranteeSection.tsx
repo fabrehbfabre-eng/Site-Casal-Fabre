@@ -1,7 +1,5 @@
-import React from 'react';
-import { ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
-import { trackInitiateCheckout } from '../config/analytics';
 
 export default function GuaranteeSection() {
   return (
@@ -47,17 +45,13 @@ export default function GuaranteeSection() {
               Se por qualquer motivo você sentir que este conteúdo não é para o momento de vocês, basta solicitar o reembolso dentro do prazo de {PRODUCT_CONFIG.guaranteeDays} dias diretamente na plataforma Kiwify. Devolvemos 100% do seu dinheiro, sem ressentimentos.
             </p>
 
+            {/* Reserved Visual Slot for Guarantee link area */}
             <div className="pt-2">
-              <a
-                href={PRODUCT_CONFIG.checkoutUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => trackInitiateCheckout('guarantee_section')}
-                className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#E0C477] hover:text-[#F4EFE5] transition-colors"
-              >
-                <span>Adquira seu exemplar com garantia total</span>
-                <ArrowRight className="w-4 h-4" />
-              </a>
+              <div
+                id="guarantee-cta-slot"
+                className="h-[20px] min-w-[200px] pointer-events-none select-none"
+                aria-hidden="true"
+              />
             </div>
           </div>
 

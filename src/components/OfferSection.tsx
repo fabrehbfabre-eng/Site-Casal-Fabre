@@ -1,13 +1,12 @@
-import React from 'react';
-import { ShieldCheck, Zap, CheckCircle2, Sparkles, Lock, ArrowRight, Download } from 'lucide-react';
+import { ShieldCheck, Zap, CheckCircle2, Sparkles, Lock, Download } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
-import { trackInitiateCheckout } from '../config/analytics';
 
 export default function OfferSection() {
   const packageItems = [
-    "Ebook Principal: O Prazer da Vida a Dois (12 Capítulos)",
-    "12 Roteiros Práticos de Conversa a Dois",
-    "12 Desafios Semanais de 7 Dias para novos hábitos",
+    "Livro Principal: O Prazer da Vida a Dois (15 Capítulos Oficiais)",
+    "Compromisso dos 40 Dias (Capítulo 14 com 4 Fases Práticas)",
+    "História Oficial do Casal Fabre (Capítulo 15)",
+    "Reflexões, Roteiros de Conversa a Dois e Práticas Semanais",
     "Bônus 01: Como Reacender a Paixão",
     "Bônus 02: 12 Mensagens Poderosas",
     "Bônus 03: Como Lidar com Ciúmes e Insegurança",
@@ -65,7 +64,7 @@ export default function OfferSection() {
                   {packageItems.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#F4EFE5]/90">
                       <CheckCircle2 className="w-4 h-4 text-[#C9A24A] shrink-0 mt-0.5" />
-                      <span className={idx === 0 ? 'font-semibold text-[#E0C477]' : 'font-light'}>
+                      <span className={idx === 0 || idx === 1 ? 'font-semibold text-[#E0C477]' : 'font-light'}>
                         {item}
                       </span>
                     </div>
@@ -81,7 +80,7 @@ export default function OfferSection() {
 
             </div>
 
-            {/* Right: Pricing Box & Primary CTA */}
+            {/* Right: Reserved Transparent CTA Area Box */}
             <div className="lg:col-span-5 bg-[#180B0E] border border-[#C9A24A]/40 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl flex flex-col justify-between">
               
               <div className="space-y-5 text-center">
@@ -93,35 +92,26 @@ export default function OfferSection() {
                   </span>
                 </div>
 
-                {/* Price Display */}
-                <div className="space-y-1.5 py-1">
-                  <span className="text-xs uppercase tracking-wider text-white/60 font-medium block">
-                    Valor promocional de lançamento
+                {/* Offer Headline */}
+                <div className="space-y-2 py-1">
+                  <span className="text-xs uppercase tracking-wider text-[#E0C477] font-semibold block">
+                    Acesso Imediato & Vitalício
                   </span>
-                  <div className="flex items-baseline justify-center gap-1.5">
-                    <span className="text-base sm:text-lg font-light text-white/70">R$</span>
-                    <span className="font-editorial text-4xl sm:text-5xl font-bold text-[#E0C477] tracking-tight">
-                      {PRODUCT_CONFIG.price}
-                    </span>
-                  </div>
-                  <span className="text-xs text-white/60 block font-light">
-                    {PRODUCT_CONFIG.installmentsInfo}
-                  </span>
+                  <p className="font-editorial text-xl sm:text-2xl font-bold text-[#F4EFE5]">
+                    Comece hoje a cuidar da sua vida a dois
+                  </p>
+                  <p className="text-xs text-white/70 font-light">
+                    Clique no botão abaixo para garantir o seu exemplar oficial na plataforma.
+                  </p>
                 </div>
 
-                {/* Primary CTA Button */}
+                {/* Reserved Primary CTA Transparent Visual Area */}
                 <div className="pt-2">
-                  <a
-                    id="offer-section-cta"
-                    href={PRODUCT_CONFIG.checkoutUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => trackInitiateCheckout('offer_master_card')}
-                    className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] text-[#180B0E] font-bold text-sm sm:text-base uppercase tracking-wider shadow-lg hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-                  >
-                    <span>{PRODUCT_CONFIG.secondaryCtaText}</span>
-                    <ArrowRight className="w-4 h-4 text-[#180B0E] shrink-0" />
-                  </a>
+                  <div
+                    id="offer-section-cta-slot"
+                    className="w-full h-[56px] bg-transparent pointer-events-none select-none"
+                    aria-hidden="true"
+                  />
                 </div>
 
               </div>
@@ -138,7 +128,7 @@ export default function OfferSection() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <Lock className="w-3.5 h-3.5 text-[#C9A24A] shrink-0" />
-                  <span>Pagamento 100% seguro via Kiwify</span>
+                  <span>Ambiente seguro de compra</span>
                 </div>
               </div>
 
@@ -152,4 +142,3 @@ export default function OfferSection() {
     </section>
   );
 }
-

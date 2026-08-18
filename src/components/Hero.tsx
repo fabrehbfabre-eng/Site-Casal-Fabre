@@ -1,6 +1,5 @@
-import React from 'react';
 import { PRODUCT_CONFIG } from '../config/offer';
-import { ShieldCheck, Zap, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
+import { ShieldCheck, Zap, CheckCircle2, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -18,14 +17,14 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          {/* Left Column: Editorial Copy, Pricing & Immediate Action */}
+          {/* Left Column: Editorial Copy & Immediate Action */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
             
             {/* Top Tag / Monogram */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4A1722]/60 border border-[#C9A24A]/30 shadow-sm animate-in fade-in slide-in-from-bottom-2 duration-300">
               <Sparkles className="w-3.5 h-3.5 text-[#E0C477]" />
               <span className="text-xs font-semibold uppercase tracking-widest text-[#E0C477]">
-                Ebook Oficial | Casal Fabre
+                Livro Oficial | Casal Fabre
               </span>
             </div>
 
@@ -43,34 +42,43 @@ export default function Hero() {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1">
               <div className="flex items-center gap-1.5 text-xs text-[#F4EFE5]/90 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
                 <CheckCircle2 className="w-4 h-4 text-[#C9A24A]" />
-                <span>12 Capítulos Práticos</span>
+                <span>15 Capítulos Oficiais</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-xs text-[#F4EFE5]/90 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                <CheckCircle2 className="w-4 h-4 text-[#C9A24A]" />
+                <span>Compromisso dos 40 Dias</span>
               </div>
               <div className="flex items-center gap-1.5 text-xs text-[#F4EFE5]/90 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
                 <CheckCircle2 className="w-4 h-4 text-[#C9A24A]" />
                 <span>6 Bônus Inclusos</span>
               </div>
-              <div className="flex items-center gap-1.5 text-xs text-[#F4EFE5]/90 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
-                <CheckCircle2 className="w-4 h-4 text-[#C9A24A]" />
-                <span>Desafios de 7 Dias</span>
-              </div>
             </div>
 
-            {/* Offer Highlights Box */}
+            {/* Offer Highlights Box & Reserved Transparent CTA Slot */}
             <div className="w-full max-w-lg bg-[#241115]/90 border border-[#C9A24A]/30 rounded-2xl p-6 shadow-2xl backdrop-blur-sm space-y-4 text-left">
               <div className="flex items-center justify-between border-b border-white/10 pb-3">
                 <div>
                   <span className="text-xs uppercase tracking-wider text-[#E0C477] font-bold block">
-                    Oferta de Lançamento
+                    Edição Digital Oficial
                   </span>
                   <span className="text-xs text-white/70">
-                    Edição Digital Oficial Completa
+                    O Prazer da Vida a Dois + Materiais Exclusivos
                   </span>
                 </div>
                 <div className="text-right">
                   <span className="inline-block px-2.5 py-1 rounded bg-[#4A1722] border border-[#C9A24A]/40 text-[#E0C477] text-[11px] font-semibold tracking-wide">
-                    Livro + 6 Bônus
+                    Acesso Imediato
                   </span>
                 </div>
+              </div>
+
+              {/* Primary Hero CTA Reserved Space (Empty, transparent, exact layout reservation) */}
+              <div className="pt-1">
+                <div
+                  id="hero-primary-cta-slot"
+                  className="w-full h-[56px] bg-transparent pointer-events-none select-none"
+                  aria-hidden="true"
+                />
               </div>
 
               {/* Highlights & Security Microcopy */}
@@ -106,7 +114,7 @@ export default function Hero() {
                 />
               </div>
 
-              {/* Bonus Bundle Small Indicator Card */}
+              {/* Bonus Bundle Indicator Card */}
               <div className="mt-4 flex items-center justify-center gap-3 bg-[#241115]/90 border border-[#C9A24A]/30 rounded-xl py-2.5 px-4 shadow-lg backdrop-blur-sm">
                 <span className="flex h-2 w-2 relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E0C477] opacity-75"></span>

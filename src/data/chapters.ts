@@ -3,98 +3,122 @@ import { ChapterItem } from '../types';
 export const CHAPTERS_DATA: ChapterItem[] = [
   {
     number: "01",
-    title: "Passear de mãos dadas",
-    subtitle: "O poder do toque sutil e da presença física cotidiana",
-    highlight: "O toque simples que reconecta dois passos no mesmo ritmo.",
-    theme: "Conexão Física & Intimidade",
-    actionSummary: "Resgatar o hábito de caminhar lado a lado, desacelerando o passo e sentindo a presença um do outro sem pressa."
+    title: "Quando O Amor Vira Rotina",
+    subtitle: "A rotina não apaga o amor, mas pode ocupar o espaço que antes era do casal",
+    highlight: "O amor também precisa ser percebido nas pequenas coisas.",
+    theme: "Presença & Consciência",
+    actionSummary: "Identificar onde a rotina afastou a convivência e escolher, com intenção, resgatar pequenos momentos de carinho e atenção."
   },
   {
     number: "02",
-    title: "Ir dormir à mesma hora",
-    subtitle: "O encerramento do dia como santuário do casal",
-    highlight: "Alinhar o descanso para evitar a solidão noturna e construir conversas íntimas de travesseiro.",
-    theme: "Sintonia & Cumplicidade",
-    actionSummary: "Desligar os aparelhos juntos, deitar no mesmo horário e transformar os últimos minutos do dia em acolhimento."
+    title: "Passear De Mãos Dadas",
+    subtitle: "Duas pessoas caminhando na mesma direção, respeitando o passo uma da outra",
+    highlight: "Criar, mesmo sem dizer uma palavra, uma sensação de proximidade, carinho e parceria.",
+    theme: "Conexão Física & Parceria",
+    actionSummary: "Caminhar lado a lado sem celular, segurando as mãos e reafirmando o compromisso com a jornada compartilhada."
   },
   {
     number: "03",
-    title: "Cultivar interesses comuns",
-    subtitle: "Construir pontes onde existiam rotinas isoladas",
-    highlight: "Descobrir projetos, gostos e curiosidades que pertencem aos dois.",
-    theme: "Projetos & Afinidade",
-    actionSummary: "Mapear atividades prazerosas que ambos queiram explorar juntos, criando memórias exclusivas da relação."
+    title: "Ir Dormir À Mesma Hora",
+    subtitle: "Transformar a hora de dormir em um espaço protegido para a relação",
+    highlight: "Não é sobre dormir no mesmo horário. É sobre não deixar a conexão sempre para depois.",
+    theme: "Sintonia & Ritual Noturno",
+    actionSummary: "Desacelerar juntos, deixar aparelhos de lado e criar minutos de conversa sincera ou acolhimento antes do descanso."
   },
   {
     number: "04",
-    title: "Confiança e perdão",
-    subtitle: "A base inegociável para quem deseja caminhar em paz",
-    highlight: "Aprender a soltar ressentimentos acumulados e renovar a transparência diária.",
-    theme: "Maturidade & Diálogo",
-    actionSummary: "Exercícios de conversa honesta para desarmar mágoas pequenas antes que se tornem muralhas emocionais."
+    title: "Cultivar Interesses Comuns",
+    subtitle: "Equilíbrio entre a individualidade saudável e as memórias que pertencem aos dois",
+    highlight: "O que vocês vivem juntos também constrói a história de vocês.",
+    theme: "Experiências Compartilhadas",
+    actionSummary: "Descobrir atividades novas, projetos ou rituais que façam o casal dizer juntos: 'isso é nosso'."
   },
   {
     number: "05",
-    title: "Abraços e beijos a cada despedida",
-    subtitle: "Nunca sair de casa sem demonstrar apreço",
-    highlight: "Um abraço demorado antes de sair lembra quem vocês são para o outro.",
-    theme: "Carinho & Valorização",
-    actionSummary: "Estabelecer o ritual inegociável de 15 segundos de abraço genuíno antes de qualquer saída de casa."
+    title: "Confiança E Perdão",
+    subtitle: "O problema está de um lado e o casal está do outro",
+    highlight: "Resolver juntos é mais importante do que vencer uma discussão.",
+    theme: "Maturidade & Reconstrução",
+    actionSummary: "Conversar com honestidade, sem punição ou medo, decidindo não transformar o passado em arma constante."
   },
   {
     number: "06",
-    title: "Faça o bem e nunca o mal",
-    subtitle: "A decisão diária de proteger a dignidade do parceiro",
-    highlight: "Eliminar a ironia desnecessária e escolher palavras que constroem.",
-    theme: "Respeito & Cuidado",
-    actionSummary: "Vigiar o tom de voz em momentos de estresse e praticar a generosidade nos pequenos detalhes."
+    title: "Abraços E Beijos A Cada Despedida",
+    subtitle: "Pequenos rituais de afeto antes de enfrentar o mundo",
+    highlight: "O carinho que se repete vira parte da identidade do casal.",
+    theme: "Carinho & Vínculo Diário",
+    actionSummary: "Nunca sair de casa sem um abraço e beijo afetuosos, criando uma âncora emocional de segurança para o dia."
   },
   {
     number: "07",
-    title: "Diga eu te amo todas as manhãs",
-    subtitle: "Iniciar a jornada afirmando o compromisso do coração",
-    highlight: "A primeira voz que seu amor ouve ao despertar deve carregar afeto.",
-    theme: "Afirmação & Segurança",
-    actionSummary: "Começar o dia com uma palavra de carinho e um olhar nos olhos antes de pegar no celular."
+    title: "Faça O Bem E Nunca O Mal",
+    subtitle: "Cuidar da forma como vocês discordam também é cuidar do amor",
+    highlight: "A raiva é uma emoção legítima, mas a agressão é uma escolha.",
+    theme: "Respeito & Proteção",
+    actionSummary: "Eliminar ironias, humilhações e acusações; transformar reclamações em pedidos claros e proteger o vínculo."
   },
   {
     number: "08",
-    title: "Deseje boa noite antes de dormir",
-    subtitle: "Selar a noite com paz, independente de como foi o dia",
-    highlight: "Nenhum dia deve terminar com silêncio frio ou ressentimento não conversado.",
-    theme: "Acolhimento & Serenidade",
-    actionSummary: "Um beijo de boa noite com uma palavra de gratidão pela presença do parceiro naquele dia."
+    title: "Diga Eu Te Amo Todas As Manhãs",
+    subtitle: "O amor não deve ser apenas presumido; ele também pode ser dito com presença",
+    highlight: "Olhar nos olhos, tocar no outro e começar o dia afirmando o compromisso do coração.",
+    theme: "Afirmação & Cuidado",
+    actionSummary: "Expressar verbalmente o amor logo pela manhã com verdade, sem deixar que o sentimento vire apenas suposição."
   },
   {
     number: "09",
-    title: "Envie mensagens ao longo do dia",
-    subtitle: "Fazer-se presente na correria sem ser invasivo",
-    highlight: "Um 'lembrei de você' ou 'estou com saudades' que quebra o peso do trabalho.",
-    theme: "Atenção & Presença",
-    actionSummary: "Mandar mensagens espontâneas sem cobranças práticas, apenas para nutrir o sentimento."
+    title: "Deseje Boa Noite Antes De Dormir",
+    subtitle: "Lembrar que estão do mesmo lado, mesmo quando o dia teve conflitos",
+    highlight: "O problema pode continuar existindo amanhã. O respeito não precisa esperar.",
+    theme: "Reconciliação & Paz",
+    actionSummary: "Encerrar o ciclo diário com respeito, um abraço sincero ou um pacto de trégua para preservar a ponte emocional."
   },
   {
     number: "10",
-    title: "Sinta orgulho de seu companheiro",
-    subtitle: "A arte de admirar em público e valorizar em particular",
-    highlight: "O relacionamento floresce quando ambos se sentem reconhecidos e valorizados.",
-    theme: "Admiração & Honra",
-    actionSummary: "Elogiar sinceramente uma virtude ou esforço recente do outro, sem esperar uma data comemorativa."
+    title: "Envie Mensagens Ao Longo Do Dia",
+    subtitle: "Presença e carinho no meio da correria, sem cobranças",
+    highlight: "Uma pequena mensagem pode lembrar ao outro que ele continua presente na sua vida.",
+    theme: "Atenção & Conexão Digital",
+    actionSummary: "Mandar mensagens espontâneas de carinho, gratidão ou bom humor para nutrir o laço durante a rotina de trabalho."
   },
   {
     number: "11",
-    title: "Estipule um dia especial",
-    subtitle: "A blindagem de uma data semanal exclusiva para os dois",
-    highlight: "Voltar a namorar, rir e desfrutar da companhia a dois sem distrações.",
-    theme: "Tempo de Qualidade",
-    actionSummary: "Definir um momento regular no calendário para um encontro a dois, sem falar de problemas da casa ou trabalho."
+    title: "Sinta Orgulho De Seu Companheiro",
+    subtitle: "Reconhecer valor e celebrar esforços dentro de casa",
+    highlight: "Quem se sente admirado dentro de casa encontra mais segurança para continuar crescendo.",
+    theme: "Admiração & Valorização",
+    actionSummary: "Elogiar atitudes reais, esforços invisíveis e conquistas, fortalecendo a admiração mútua como base sólida."
   },
   {
     number: "12",
-    title: "Compartilhe as alegrias",
-    subtitle: "Celebrar vitórias grandes e pequenas sob o mesmo teto",
-    highlight: "A verdadeira cumplicidade vibra com cada conquista do outro.",
-    theme: "Celebração & União",
-    actionSummary: "Transformar pequenas conquistas diárias em motivos de comemoração e brindes dentro de casa."
+    title: "Estipule Um Dia Especial",
+    subtitle: "O casal precisa de espaço na agenda, não apenas de boas intenções",
+    highlight: "Reservar um tempo intencional para conversar, rir e sair do automático.",
+    theme: "Tempo de Qualidade & Intencionalidade",
+    actionSummary: "Programar com regularidade um momento a dois protegido de conversas sobre boletos, trabalho ou afazeres domésticos."
+  },
+  {
+    number: "13",
+    title: "Compartilhe As Alegrias",
+    subtitle: "Celebrar vitórias e não deixar que apenas problemas dominem as conversas",
+    highlight: "Quando vocês celebram juntos, a alegria passa a fazer parte da história do casal.",
+    theme: "Celebração & Positividade",
+    actionSummary: "Contar novidades felizes, vibrar genuinamente com as conquistas do parceiro e guardar um acervo de boas memórias."
+  },
+  {
+    number: "14",
+    title: "Compromisso Dos 40 Dias",
+    subtitle: "Uma jornada prática de 4 fases para transformar pequenas atitudes em novos hábitos",
+    highlight: "Transforme intenção em prática e prática em hábitos consistentes de cuidado e continuidade.",
+    theme: "Jornada Prática de Continuidade",
+    actionSummary: "Sequência de 40 ações diárias divididas em Reconexão, Comunicação, Rituais e Continuidade para fortalecer a convivência."
+  },
+  {
+    number: "15",
+    title: "Nossa História",
+    subtitle: "A trajetória real de Heberson e Kátia Fabre que deu origem ao livro",
+    highlight: "Respeito, amor, fé e entrega podem transformar caminhos diferentes em uma mesma caminhada.",
+    theme: "Propósito, Fé & Autenticidade",
+    actionSummary: "O relato inspirador do Casal Fabre, mostrando como uma união simples e improvável construiu uma história sólida de vida a dois."
   }
 ];

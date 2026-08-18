@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, BookOpen, Sparkles, ShieldCheck, Heart } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
-import { trackInitiateCheckout } from '../config/analytics';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +16,7 @@ export default function Header() {
 
   const navLinks = [
     { label: 'O Livro', href: '#sobre-o-livro' },
-    { label: '12 Capítulos', href: '#capitulos' },
+    { label: '15 Capítulos', href: '#capitulos' },
     { label: 'O Que Há Dentro', href: '#experiencia' },
     { label: '6 Bônus', href: '#bonus' },
     { label: 'Casal Fabre', href: '#autores' },
@@ -76,18 +75,13 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Header CTA Button */}
+        {/* Header CTA Space (Invisible transparent layout reservation) */}
         <div className="hidden sm:flex items-center gap-4">
-          <a
-            id="header-cta-button"
-            href={PRODUCT_CONFIG.checkoutUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => trackInitiateCheckout('header_desktop')}
-            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] text-[#180B0E] font-semibold text-xs uppercase tracking-wider shadow-md hover:shadow-xl hover:shadow-[#C9A24A]/20 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-          >
-            <span>{PRODUCT_CONFIG.ebookCtaText}</span>
-          </a>
+          <div
+            id="header-cta-slot"
+            className="w-[155px] h-[38px] bg-transparent pointer-events-none select-none"
+            aria-hidden="true"
+          />
         </div>
 
         {/* Mobile Hamburger Toggle */}
@@ -118,18 +112,14 @@ export default function Header() {
           </nav>
 
           <div className="pt-4">
-            <a
-              id="mobile-drawer-cta-button"
-              href={PRODUCT_CONFIG.checkoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => trackInitiateCheckout('header_mobile_drawer')}
-              className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] text-[#180B0E] font-bold text-sm uppercase tracking-wider shadow-lg"
-            >
-              <span>{PRODUCT_CONFIG.primaryCtaText}</span>
-            </a>
-            <p className="text-center text-[11px] text-[#F4EFE5]/50 mt-2">
-              Acesso digital imediato por {PRODUCT_CONFIG.formattedPrice}
+            {/* Mobile Drawer CTA Transparent Space */}
+            <div
+              id="mobile-drawer-cta-slot"
+              className="w-full h-[48px] bg-transparent pointer-events-none select-none"
+              aria-hidden="true"
+            />
+            <p className="text-center text-[11px] text-[#F4EFE5]/70 mt-2">
+              Acesso digital imediato e vitalício ao conteúdo completo
             </p>
           </div>
         </div>

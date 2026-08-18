@@ -1,6 +1,4 @@
-import React from 'react';
-import { BookOpen, BrainCircuit, MessagesSquare, CheckSquare, CalendarDays, Sparkles } from 'lucide-react';
-import { PRODUCT_CONFIG } from '../config/offer';
+import { BookOpen, BrainCircuit, CheckSquare, CalendarDays, Sparkles } from 'lucide-react';
 
 export default function ProductPresentation() {
   const steps = [
@@ -8,35 +6,35 @@ export default function ProductPresentation() {
       step: "01",
       name: "LER",
       title: "Leitura Curta & Direta",
-      description: "Textos enxutos e focados, pensados para casais ocupados lerem juntos ou individualmente em menos de 10 minutos.",
+      description: "Textos enxutos e focados, pensados para ler um capítulo por vez no ritmo real do casal.",
       icon: BookOpen,
     },
     {
       step: "02",
       name: "REFLETIR",
       title: "Perguntas de Consciência",
-      description: "Pausas intencionais para entender onde a relação está e como pequenas atitudes diárias impactam a harmonia.",
+      description: "Pausas intencionais para perceber quem está ao seu lado e o que pode voltar a ser cuidado.",
       icon: BrainCircuit,
     },
     {
       step: "03",
       name: "CONVERSAR",
-      title: "Diálogo Seguro & Guiado",
-      description: "Roteiros de conversa a dois para falar de sentimentos e desejos sem brigas, julgamentos ou defesas armadas.",
-      icon: MessagesSquare,
+      title: "Diálogo Possível",
+      description: "Conversas a dois para alinhar sentimentos, expressar necessidades e quebrar o silêncio sem brigas.",
+      icon: BrainCircuit,
     },
     {
       step: "04",
       name: "PRATICAR",
-      title: "Atitudes Reais no Dia",
-      description: "Ações simples e tangíveis que não dependem de dinheiro, mas de vontade e consideração mútua.",
+      title: "Atitudes Possíveis",
+      description: "Pequenos gestos diários que não dependem de grandes ocasiões, mas de escolha e presença.",
       icon: CheckSquare,
     },
     {
       step: "05",
-      name: "CRIAR HÁBITOS",
-      title: "Desafio Prático de 7 Dias",
-      description: "Metas semanais para consolidar os novos comportamentos até que o carinho e o respeito se tornem naturais.",
+      name: "40 DIAS",
+      title: "Compromisso Prático",
+      description: "Uma jornada diária estruturada em 4 fases para transformar pequenas atitudes em novos hábitos na relação.",
       icon: CalendarDays,
     },
   ];
@@ -56,7 +54,7 @@ export default function ProductPresentation() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4A1722]/50 border border-[#C9A24A]/30 text-[#E0C477] text-xs font-semibold uppercase tracking-widest">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Método Editorial Casal Fabre</span>
+            <span>Proposta Editorial Oficial</span>
           </div>
 
           <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#F4EFE5] leading-tight">
@@ -64,27 +62,30 @@ export default function ProductPresentation() {
           </h2>
 
           <p className="text-base sm:text-lg text-[#F4EFE5]/80 font-light leading-relaxed">
-            Este não é um livro acadêmico de teorias complexas e nem um PDF genérico para ser esquecido no computador. Ele foi desenhado como um <strong>guia prático de cabeceira</strong> para ser vivido pelo casal.
+            Não leia estas páginas procurando um relacionamento perfeito. Leia procurando uma <strong>atitude possível</strong>, uma <strong>conversa que pode acontecer</strong>, um <strong>gesto que pode voltar</strong> e um <strong>hábito que pode ser reconstruído</strong>.
           </p>
         </div>
 
         {/* Highlight Banner Quote */}
         <div className="mb-16 bg-gradient-to-r from-[#241115] via-[#4A1722]/80 to-[#241115] border-y sm:border border-[#C9A24A]/40 sm:rounded-2xl p-8 sm:p-10 text-center shadow-2xl">
           <p className="font-editorial text-2xl sm:text-3xl md:text-4xl font-bold text-[#F4EFE5] italic leading-snug">
-            “Não é apenas um livro para ler.<br className="hidden sm:inline" /> É um livro para viver juntos.”
+            “Relacionamentos fortes não são feitos apenas de grandes declarações;<br className="hidden sm:inline" /> são feitos de pequenas escolhas repetidas com amor.”
           </p>
           <div className="w-16 h-[1px] bg-[#C9A24A] mx-auto mt-4 mb-2" />
           <span className="text-xs uppercase tracking-[0.25em] text-[#E0C477] font-medium">
-            Heberson & Katia Fabre
+            Heberson Fabre | Casal Fabre
           </span>
         </div>
 
-        {/* 5-Pillar Experience Path */}
+        {/* 5-Step Practical Path */}
         <div className="space-y-6">
           <div className="text-center mb-8">
             <h3 className="font-editorial text-xl sm:text-2xl font-bold text-[#F4EFE5]">
-              A dinâmica de cada tema foi estruturada em 5 passos:
+              Como usar este livro na vida real:
             </h3>
+            <p className="text-xs sm:text-sm text-[#F4EFE5]/70 max-w-xl mx-auto mt-2">
+              Leia um capítulo por vez. Depois da leitura, reflita e escolha pelo menos uma atitude para colocar em prática. Não procure fazer tudo perfeito. Procure fazer diferente.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -124,18 +125,18 @@ export default function ProductPresentation() {
         {/* Quick Summary Pill Bar */}
         <div className="mt-12 bg-[#241115] border border-[#C9A24A]/20 rounded-xl p-4 sm:p-6 flex flex-wrap items-center justify-around gap-4 text-center">
           <div>
-            <span className="block font-editorial text-2xl sm:text-3xl font-bold text-[#E0C477]">12</span>
-            <span className="text-xs text-[#F4EFE5]/70 uppercase tracking-wider">Capítulos Práticos</span>
+            <span className="block font-editorial text-2xl sm:text-3xl font-bold text-[#E0C477]">15</span>
+            <span className="text-xs text-[#F4EFE5]/70 uppercase tracking-wider">Capítulos Oficiais</span>
           </div>
           <div className="w-[1px] h-8 bg-white/10 hidden sm:block" />
           <div>
-            <span className="block font-editorial text-2xl sm:text-3xl font-bold text-[#E0C477]">12</span>
-            <span className="text-xs text-[#F4EFE5]/70 uppercase tracking-wider">Roteiros de Conversa</span>
+            <span className="block font-editorial text-2xl sm:text-3xl font-bold text-[#E0C477]">40</span>
+            <span className="text-xs text-[#F4EFE5]/70 uppercase tracking-wider">Dias de Prática Contínua</span>
           </div>
           <div className="w-[1px] h-8 bg-white/10 hidden sm:block" />
           <div>
-            <span className="block font-editorial text-2xl sm:text-3xl font-bold text-[#E0C477]">12</span>
-            <span className="text-xs text-[#F4EFE5]/70 uppercase tracking-wider">Desafios de 7 Dias</span>
+            <span className="block font-editorial text-2xl sm:text-3xl font-bold text-[#E0C477]">15</span>
+            <span className="text-xs text-[#F4EFE5]/70 uppercase tracking-wider">Práticas e Conversas</span>
           </div>
           <div className="w-[1px] h-8 bg-white/10 hidden sm:block" />
           <div>

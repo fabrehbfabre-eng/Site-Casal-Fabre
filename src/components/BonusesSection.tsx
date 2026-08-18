@@ -1,8 +1,6 @@
 import React from 'react';
 import { BONUSES_DATA } from '../data/bonuses';
-import { PRODUCT_CONFIG } from '../config/offer';
-import { Sparkles, CheckCircle2, ArrowRight, ShieldCheck, Gift } from 'lucide-react';
-import { trackInitiateCheckout } from '../config/analytics';
+import { Sparkles, CheckCircle2, ShieldCheck, Gift } from 'lucide-react';
 
 export default function BonusesSection() {
   return (
@@ -22,20 +20,20 @@ export default function BonusesSection() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4A1722]/60 border border-[#C9A24A]/40 text-[#E0C477] text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#C9A24A]" />
-            <span>OFERTA ESPECIAL</span>
+            <span>MATERIAIS COMPLEMENTARES</span>
           </div>
 
           {/* Main Title */}
           <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#F4EFE5] leading-tight">
-            Compre Hoje e Leve{' '}
+            Adquira o Livro e Receba{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A]">
-              +6 Bônus Grátis
+              +6 Bônus Inclusos
             </span>
           </h2>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-[#F4EFE5]/80 font-light leading-relaxed max-w-2xl mx-auto">
-            Material exclusivo que sozinho vale outra compra, mas que você recebe totalmente de graça ao adquirir O Prazer da Vida a Dois.
+            Guias práticos desenvolvidos para complementar as reflexões de O Prazer da Vida a Dois e apoiar o casal em situações específicas do cotidiano.
           </p>
         </div>
 
@@ -58,7 +56,7 @@ export default function BonusesSection() {
                   </span>
                 </div>
 
-                {/* Official Bonus Cover Image (Centered, object-contain, crisp) */}
+                {/* Official Bonus Cover Image */}
                 <div className="w-full flex items-center justify-center my-4 py-2 h-[240px]">
                   <img
                     src={bonus.imageUrl}
@@ -94,54 +92,40 @@ export default function BonusesSection() {
           ))}
         </div>
 
-        {/* Valuation Box (Valor Total dos Bônus) */}
+        {/* Action Box with Transparent Reserved CTA Area */}
         <div className="bg-[#241115]/95 border border-[#C9A24A]/40 rounded-3xl p-8 sm:p-10 max-w-2xl mx-auto shadow-2xl text-center space-y-6 relative overflow-hidden backdrop-blur-md">
           {/* Subtle Corner Glow */}
           <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#C9A24A]/15 rounded-full blur-2xl pointer-events-none" />
 
-          {/* Pricing Valuation */}
+          {/* Action Header */}
           <div className="space-y-2">
-            <span className="text-xs uppercase tracking-[0.2em] text-white/70 font-semibold block">
-              VALOR TOTAL DOS 6 BÔNUS
+            <span className="text-xs uppercase tracking-[0.2em] text-[#E0C477] font-bold block">
+              PACOTE COMPLETO DIGITAL
             </span>
-            <div className="flex items-center justify-center gap-3 sm:gap-4 flex-wrap">
-              <span className="text-2xl sm:text-3xl text-white/40 line-through font-editorial">
-                R$ 597,00
-              </span>
-              <span className="text-xl sm:text-2xl text-white/60 font-editorial">
-                →
-              </span>
-              <span className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#E0C477]">
-                HOJE: GRATUITO
-              </span>
-            </div>
+            <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F4EFE5]">
+              O Livro Oficial + Todos os 6 Bônus Inclusos
+            </h3>
           </div>
 
           {/* Informational Message */}
           <p className="text-xs sm:text-sm text-[#F4EFE5]/80 font-light max-w-lg mx-auto leading-relaxed border-t border-white/10 pt-4">
-            Os 6 bônus são liberados junto com o ebook após a confirmação do pagamento.
+            Os 6 bônus são liberados no seu e-mail junto com o livro completo logo após a confirmação da compra.
           </p>
 
-          {/* CTA Button */}
-          <div className="pt-2">
-            <a
-              id="bonus-section-cta"
-              href={PRODUCT_CONFIG.checkoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => trackInitiateCheckout('bonuses_section')}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 py-4 px-8 sm:px-10 rounded-xl bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] text-[#180B0E] font-bold text-sm sm:text-base uppercase tracking-wider shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-            >
-              <span>QUERO MEU EBOOK + 6 BÔNUS</span>
-              <ArrowRight className="w-5 h-5 text-[#180B0E]" />
-            </a>
+          {/* Reserved CTA Transparent Space */}
+          <div className="pt-2 flex justify-center">
+            <div
+              id="bonus-section-cta-slot"
+              className="w-full sm:w-[360px] h-[56px] bg-transparent pointer-events-none select-none"
+              aria-hidden="true"
+            />
           </div>
 
           {/* Micro Trust Indicators */}
           <div className="flex items-center justify-center gap-4 text-[11px] text-white/60 pt-1">
             <div className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-[#C9A24A]" />
-              <span>Garantia de 7 dias</span>
+              <span>Garantia incondicional de 7 dias</span>
             </div>
             <span className="text-white/30">|</span>
             <div className="flex items-center gap-1.5">

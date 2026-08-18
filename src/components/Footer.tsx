@@ -52,7 +52,12 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#capitulos" className="hover:text-[#E0C477] transition-colors">
-                  Os 12 Capítulos
+                  Os 15 Capítulos
+                </a>
+              </li>
+              <li>
+                <a href="#experiencia" className="hover:text-[#E0C477] transition-colors">
+                  Compromisso dos 40 Dias
                 </a>
               </li>
               <li>
@@ -62,7 +67,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#autores" className="hover:text-[#E0C477] transition-colors">
-                  Sobre o Casal Fabre
+                  Casal Fabre
                 </a>
               </li>
               <li>
@@ -73,121 +78,118 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3: Security & Support */}
+          {/* Col 3: Support & Contact */}
           <div className="md:col-span-3 space-y-3">
             <span className="text-xs uppercase tracking-widest text-[#E0C477] font-bold block">
               Atendimento & Suporte
             </span>
-            <p className="text-xs text-white/60 leading-relaxed">
-              Dúvidas sobre o produto ou acesso ao material:
+            <p className="text-xs text-white/60 font-light">
+              Dúvidas sobre o produto ou acesso ao material digital:
             </p>
             <a
               href={`mailto:${PRODUCT_CONFIG.supportEmail}`}
-              className="inline-block text-xs sm:text-sm font-semibold text-[#E0C477] hover:underline"
+              className="text-xs sm:text-sm text-[#E0C477] hover:underline block break-all font-mono"
             >
               {PRODUCT_CONFIG.supportEmail}
             </a>
+            <div className="pt-2">
+              <span className="inline-block px-3 py-1 rounded bg-[#241115] border border-[#C9A24A]/30 text-[11px] text-[#E0C477]">
+                Garantia Incondicional de {PRODUCT_CONFIG.guaranteeDays} Dias
+              </span>
+            </div>
           </div>
 
         </div>
 
-        {/* Bottom Legal & Copyright */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-white/50">
-          <div>
-            © 2022 Casal Fabre | O Prazer da Vida a Dois | Todos os direitos reservados.
+        {/* Bottom Bar: Copyright & Legal */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-center sm:text-left">
+            <span>© {new Date().getFullYear()} Casal Fabre. Todos os direitos reservados.</span>
+            <div className="flex items-center gap-4 text-[11px]">
+              <button
+                onClick={() => setModalType('termos')}
+                className="hover:text-[#E0C477] transition-colors underline cursor-pointer"
+              >
+                Termos de Uso
+              </button>
+              <span>•</span>
+              <button
+                onClick={() => setModalType('privacidade')}
+                className="hover:text-[#E0C477] transition-colors underline cursor-pointer"
+              >
+                Políticas de Privacidade
+              </button>
+            </div>
           </div>
 
-          {/* Legal Links */}
-          <div className="flex items-center gap-6">
-            <button
-              onClick={() => setModalType('termos')}
-              className="hover:text-white transition-colors cursor-pointer"
-            >
-              Termos de Uso
-            </button>
-            <span className="text-white/30">|</span>
-            <button
-              onClick={() => setModalType('privacidade')}
-              className="hover:text-white transition-colors cursor-pointer"
-            >
-              Política de Privacidade
-            </button>
-          </div>
-
-          {/* Back to Top */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-xs text-[#E0C477] hover:text-white transition-colors cursor-pointer"
-            aria-label="Voltar ao topo"
+            className="flex items-center gap-1.5 text-xs text-white/60 hover:text-[#E0C477] transition-colors cursor-pointer"
+            aria-label="Voltar ao topo da página"
           >
             <span>Voltar ao topo</span>
             <ArrowUp className="w-3.5 h-3.5" />
           </button>
         </div>
 
-        {/* Kiwify and educational disclaimer */}
-        <div className="mt-8 pt-6 border-t border-white/5 text-[10px] text-white/40 text-center max-w-3xl mx-auto leading-relaxed">
-          Aviso: Este produto não substitui o acompanhamento profissional psicológico, médico ou aconselhamento conjugal clínico quando necessário. Os resultados práticos dependem do comprometimento individual e conjunto do casal na aplicação dos princípios abordados.
+        {/* Legal Disclaimer */}
+        <div className="mt-8 pt-6 border-t border-white/5 text-[11px] text-white/40 leading-relaxed text-center sm:text-left">
+          <p>
+            Este produto digital é comercializado pela internet. O conteúdo aqui exposto tem finalidade estritamente educacional, reflexiva e de apoio à convivência a dois, não constituindo promessa de resultados infalíveis nem substituindo orientação profissional, médica ou psicoterapêutica especializada.
+          </p>
         </div>
 
       </div>
 
-      {/* Legal Modal Component */}
+      {/* Legal Modals */}
       {modalType && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-[#FAF8F5] text-[#180B0E] rounded-2xl max-w-2xl w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
-            <div className="flex items-center justify-between border-b border-[#D5C9B8] pb-3">
-              <h3 className="font-editorial text-2xl font-bold text-[#180B0E]">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="bg-[#241115] border border-[#C9A24A]/40 rounded-2xl max-w-lg w-full p-6 sm:p-8 space-y-4 shadow-2xl text-[#F4EFE5] max-h-[85vh] overflow-y-auto">
+            <div className="flex items-center justify-between border-b border-white/10 pb-3">
+              <h3 className="font-editorial text-xl font-bold text-[#E0C477]">
                 {modalType === 'termos' ? 'Termos de Uso' : 'Política de Privacidade'}
               </h3>
               <button
                 onClick={() => setModalType(null)}
-                className="w-8 h-8 rounded-full bg-[#E3DACD] text-[#180B0E] font-bold flex items-center justify-center hover:bg-[#C9A24A] hover:text-[#180B0E] transition-colors"
+                className="text-white/60 hover:text-[#F4EFE5] text-lg font-bold p-1"
+                aria-label="Fechar"
               >
                 ✕
               </button>
             </div>
 
-            <div className="text-xs sm:text-sm text-[#463A31] space-y-3 leading-relaxed">
+            <div className="text-xs text-white/80 leading-relaxed space-y-3 font-light">
               {modalType === 'termos' ? (
                 <>
                   <p>
-                    Bem-vindo ao site oficial do ebook <strong>O Prazer da Vida a Dois</strong> (Casal Fabre). Ao adquirir ou acessar nossos materiais digitais, você concorda com os seguintes termos:
+                    Ao adquirir ou acessar o livro digital &ldquo;O Prazer da Vida a Dois&rdquo; e seus bônus, você concorda com os presentes termos. O conteúdo é protegido por direitos autorais e destina-se exclusivamente ao uso pessoal do adquirente, sendo vedada sua reprodução, distribuição comercial, compartilhamento ou revenda sem autorização prévia por escrito.
                   </p>
                   <p>
-                    1. <strong>Propriedade Intelectual:</strong> Todo o conteúdo, incluindo textos, capítulos, exercícios e materiais bônus, é protegido por direitos autorais pertencentes a Heberson Fabre e Casal Fabre. É estritamente proibida a reprodução, redistribuição ou comercialização não autorizada.
-                  </p>
-                  <p>
-                    2. <strong>Acesso Digital:</strong> O produto é 100% digital e o acesso é disponibilizado após a confirmação do pagamento pelo intermediador Kiwify.
-                  </p>
-                  <p>
-                    3. <strong>Garantia de 7 Dias:</strong> Conforme o Código de Defesa do Consumidor, você tem até 7 dias corridos a partir da data de compra para solicitar o reembolso integral diretamente pela plataforma Kiwify.
+                    O material busca oferecer princípios práticos e reflexivos sobre convivência e relacionamento conjugal. Os resultados dependem da aplicação voluntária e do contexto de cada casal.
                   </p>
                 </>
               ) : (
                 <>
                   <p>
-                    A privacidade e a segurança dos seus dados são prioritárias para o <strong>Casal Fabre</strong>.
+                    Respeitamos sua privacidade e protegemos seus dados pessoais de acordo com a legislação aplicável (LGPD). As informações fornecidas durante a compra (como nome e e-mail) são utilizadas exclusivamente para o envio do acesso ao produto, comunicações de suporte e notas fiscais.
                   </p>
                   <p>
-                    1. <strong>Coleta de Dados:</strong> Os dados de pagamento (cartão de crédito, PIX) são processados diretamente pela plataforma certificada Kiwify em ambiente seguro criptografado. Não armazenamos informações financeiras sensíveis em nossos servidores.
-                  </p>
-                  <p>
-                    2. <strong>Uso do E-mail:</strong> Seu e-mail é utilizado exclusivamente para o envio dos links de acesso aos materiais digitais adquiridos e comunicações relevantes sobre o produto.
-                  </p>
-                  <p>
-                    3. <strong>Não Compartilhamento:</strong> Não vendemos nem compartilhamos seus dados cadastrais com terceiros para fins de marketing abusivo.
+                    Seus dados nunca serão comercializados ou compartilhados com terceiros não autorizados. Os pagamentos são processados em ambiente seguro e criptografado pela plataforma de pagamentos.
                   </p>
                 </>
               )}
             </div>
 
-            <div className="pt-4 border-t border-[#D5C9B8] text-right">
+            <div className="pt-3 border-t border-white/10 text-right">
               <button
                 onClick={() => setModalType(null)}
-                className="px-5 py-2 rounded-xl bg-[#180B0E] text-[#F4EFE5] text-xs font-semibold hover:bg-[#4A1722] transition-colors"
+                className="px-5 py-2 rounded-lg bg-[#4A1722] hover:bg-[#4A1722]/80 text-[#E0C477] border border-[#C9A24A]/30 text-xs font-semibold"
               >
-                Entendi e Fechar
+                Fechar
               </button>
             </div>
           </div>
