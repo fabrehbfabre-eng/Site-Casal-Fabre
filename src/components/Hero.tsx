@@ -98,7 +98,7 @@ export default function Hero() {
               {/* Product Image */}
               <div className="w-full flex items-center justify-center">
                 <img
-                  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=708,fit=crop/YZ9j7Zz5nNsVj0vb/capa-nova-u0tAbsFjBdWmpA3R.png"
+                  src={PRODUCT_CONFIG.images.mainProductImage}
                   alt="O Prazer da Vida a Dois | Casal Fabre | Heberson Fabre"
                   className="w-full h-auto max-h-[520px] object-contain drop-shadow-2xl select-none"
                   loading="eager"

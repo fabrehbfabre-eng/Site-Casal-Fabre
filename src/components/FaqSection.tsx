@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FAQS_DATA } from '../data/faqs';
-import { HelpCircle, Plus, Minus, ArrowRight, ShieldCheck } from 'lucide-react';
+import { HelpCircle, Plus, Minus, ShieldCheck } from 'lucide-react';
 import { PRODUCT_CONFIG } from '../config/offer';
 
 export default function FaqSection() {
@@ -122,22 +122,6 @@ export default function FaqSection() {
             <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#FAF8F5]">
               Pronto para começar a cuidar mais da vida a dois?
             </h3>
-            <p className="text-sm sm:text-base text-[#E5C78A] font-light">
-              Conheça O Prazer da Vida a Dois + 6 bônus.
-            </p>
-          </div>
-
-          <div>
-            <a
-              id="faq-section-cta"
-              href={PRODUCT_CONFIG.checkoutUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 py-4 px-8 sm:px-10 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#DFBE7A] to-[#C5A059] text-[#081711] font-bold text-sm sm:text-base uppercase tracking-wider shadow-xl hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-            >
-              <span>QUERO O PRAZER DA VIDA A DOIS</span>
-              <ArrowRight className="w-5 h-5 text-[#081711]" />
-            </a>
           </div>
 
           <div className="flex items-center justify-center gap-4 text-[11px] text-white/60 pt-1">

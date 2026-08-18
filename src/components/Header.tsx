@@ -41,15 +41,17 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Brand Monogram & Logo */}
+        {/* Brand Logo Oficial */}
         <a
           href="#"
           className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-[#C5A059]/50 rounded-lg p-1"
           aria-label="Casal Fabre Início"
         >
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#1b3a2c] to-[#0a1b14] border border-[#C5A059]/40 flex items-center justify-center shadow-md group-hover:border-[#C5A059] transition-colors">
-            <span className="font-editorial text-lg font-bold text-[#E5C78A] tracking-wider">CF</span>
-          </div>
+          <img
+            src={PRODUCT_CONFIG.images.officialLogo}
+            alt="Casal Fabre Logo Oficial"
+            className="h-10 sm:h-11 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-200"
+          />
           <div className="flex flex-col">
             <span className="font-editorial text-xl font-bold tracking-widest text-[#FAF8F5] uppercase group-hover:text-[#E5C78A] transition-colors">
               Casal Fabre

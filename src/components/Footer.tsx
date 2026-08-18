@@ -19,9 +19,11 @@ export default function Footer() {
           {/* Col 1: Brand & Identity */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#132C21] border border-[#C5A059]/40 flex items-center justify-center">
-                <span className="font-editorial text-lg font-bold text-[#E5C78A]">CF</span>
-              </div>
+              <img
+                src={PRODUCT_CONFIG.images.officialLogo}
+                alt="Casal Fabre Logo Oficial"
+                className="h-11 w-auto object-contain drop-shadow-md"
+              />
               <div>
                 <span className="font-editorial text-xl font-bold tracking-widest text-[#FAF8F5] uppercase block">
                   Casal Fabre

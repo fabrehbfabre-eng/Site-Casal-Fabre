@@ -31,10 +31,11 @@ export const PRODUCT_CONFIG = {
   ebookCtaText: "QUERO MEU EBOOK",
   finalCtaText: "QUERO O PRAZER DA VIDA A DOIS",
   
-  // Imagens do Casal Fabre e Capa do Ebook
+  // Imagens do Casal Fabre, Capa do Ebook e Logo Oficial
   images: {
-    mainProductImage: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=708,fit=crop/YZ9j7Zz5nNsVj0vb/capa-nova-u0tAbsFjBdWmpA3R.png",
+    officialLogo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=406,fit=crop/YZ9j7Zz5nNsVj0vb/logo-oficial-fabre-xL115K7nPnC9uYzV.png",
+    mainProductImage: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=519,fit=crop/YZ9j7Zz5nNsVj0vb/capa-o-prazer-da-vida-a-dois-6zAZkyxhEpfdB0EK.png",
     coupleRealPhoto: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=525,fit=crop/YZ9j7Zz5nNsVj0vb/casal-fabre-1-photoroom-f1cKR1RJdl44WCEn.png",
-    bookCoverTexture: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=708,fit=crop/YZ9j7Zz5nNsVj0vb/capa-nova-u0tAbsFjBdWmpA3R.png",
+    bookCoverTexture: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=519,fit=crop/YZ9j7Zz5nNsVj0vb/capa-o-prazer-da-vida-a-dois-6zAZkyxhEpfdB0EK.png",
   }
 };

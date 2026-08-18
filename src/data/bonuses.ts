@@ -4,55 +4,56 @@ export const BONUSES_DATA: BonusItem[] = [
   {
     id: 1,
     number: "BÔNUS 01",
-    title: "Como Reacender a Paixão",
-    description: "Do 'Passear de mãos dadas' ao 'Diga eu te amo': técnicas para transformar o cotidiano em reconexão.",
-    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=235,h=406,fit=crop/Aq2vLRz2KwTrpz11/como-reacender-a-paixao-AQEZpbxrwQiMBx31.png",
+    title: "Como Reacender a Paixão — Dia a Dia",
+    description: "Técnicas e atitudes práticas para transformar a rotina do casal em reconexão, carinho e cumplicidade.",
+    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/como-reacender-a-paixapso-dia-a-dia-MPHQw4T0PKomLaib.png",
     focus: "Intimidade & Atração",
     format: "Guia Digital"
   },
   {
     id: 2,
     number: "BÔNUS 02",
-    title: "Como Lidar com Ciúmes",
-    description: "Método da 'Confiança Recuperada' para transformar inseguranças em relacionamento saudável.",
-    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=233,h=406,fit=crop/Aq2vLRz2KwTrpz11/como-lidar-com-ciumes-mjEG9BG0gacLkMP1.png",
-    focus: "Segurança Emocional",
+    title: "12 Mensagens Poderosas",
+    description: "Palavras e frases estratégicas para quebrar o gelo, demonstrar valor e reacender a admiração mútua.",
+    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/12-mensagens-poderosas-r9JaegDu86FchG8G.png",
+    focus: "Comunicação Acolhedora",
     format: "Guia Digital"
   },
   {
     id: 3,
     number: "BÔNUS 03",
-    title: "12 Frases para Reconquistar",
-    description: "Palavras que tocam a alma para quebrar o gelo e reacender a admiração.",
-    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=231,h=399,fit=crop/Aq2vLRz2KwTrpz11/12-mensagens-YBgb4ab7JvfzV7pG.png",
-    focus: "Comunicação Acolhedora",
+    title: "Como Lidar com Ciúmes e Insegurança",
+    description: "Um guia prático para entender as raízes da insegurança e construir uma relação baseada em confiança sólida.",
+    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/como-lidar-com-ciumes-e-inseguranassa-H13UlPT2HtZX7TDH.png",
+    focus: "Segurança Emocional",
     format: "Guia Digital"
   },
   {
     id: 4,
     number: "BÔNUS 04",
-    title: "Filhos de Outro Relacionamento",
-    description: "Como criar harmonia familiar mesmo em situações complexas.",
-    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=233,h=406,fit=crop/Aq2vLRz2KwTrpz11/filhos-de-outro-relacionamento-AMq84NDbG3UNDOR0.png",
+    title: "Filhos de Outro Relacionamento — Como Lidar",
+    description: "Como estabelecer limites saudáveis, cultivar respeito e criar harmonia familiar no dia a dia.",
+    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/filhos-de-outro-relacionamento_-como-lidar-d5DMb4jetjLnpClZ.png",
     focus: "Harmonia Familiar",
     format: "Guia Digital"
   },
   {
     id: 5,
     number: "BÔNUS 05",
-    title: "5 Maneiras de Surpreender",
-    description: "Surpresas que fazem casais veteranos sentirem frio na barriga novamente.",
-    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=233,h=406,fit=crop/Aq2vLRz2KwTrpz11/5-maneiras-de-surpreender-mxBX7W2VaRcqqbDk.jpg",
-    focus: "Romance & Surpresas",
+    title: "3 Passos para Manter a Chama Acesa",
+    description: "Três pilares fundamentais para casais que desejam manter o desejo, o romance e a cumplicidade ao longo dos anos.",
+    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/3-passos-para-manter-a-chama-acesa-JleU6lOHWhvInvpo.png",
+    focus: "Longevidade da Relação",
     format: "Guia Digital"
   },
   {
     id: 6,
     number: "BÔNUS 06",
-    title: "Como Manter a Chama Acesa",
-    description: "O segredo dos casais que permanecem apaixonados por anos.",
-    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=231,h=399,fit=crop/Aq2vLRz2KwTrpz11/como-manter-a-chama-acesa-1-mjEG9MKBGyCkMNJ4.png",
-    focus: "Longevidade da Relação",
+    title: "12 Maneiras de Transformar o Cotidiano",
+    description: "Pequenos gestos, surpresas e dinâmicas simples para afastar o tédio e renovar o afeto na convivência diária.",
+    imageUrl: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=556,fit=crop/YZ9j7Zz5nNsVj0vb/12-maneiras-de-transformar-o-cotidiano-RJPkQnVNp1NHuxZb.png",
+    focus: "Romance & Cotidiano",
     format: "Guia Digital"
   }
 ];
+

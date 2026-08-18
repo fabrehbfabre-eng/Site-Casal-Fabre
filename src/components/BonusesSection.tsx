@@ -53,28 +53,28 @@ export default function BonusesSection() {
                   </span>
                   <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#E5C78A] bg-[#132C21] px-2.5 py-0.5 rounded-full border border-[#C5A059]/30">
                     <Gift className="w-3 h-3 text-[#C5A059]" />
-                    <span>Incluso</span>
+                    <span>Incluído</span>
                   </span>
                 </div>
 
                 {/* Official Bonus Cover Image (Centered, object-contain, crisp) */}
-                <div className="w-full flex items-center justify-center my-4 py-2 min-h-[240px]">
+                <div className="w-full flex items-center justify-center my-4 py-2 h-[240px]">
                   <img
                     src={bonus.imageUrl}
                     alt={`${bonus.number}: ${bonus.title}`}
-                    className="max-h-[220px] sm:max-h-[240px] w-auto max-w-[170px] sm:max-w-[190px] object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 select-none"
+                    className="max-h-[220px] sm:max-h-[235px] w-auto max-w-[170px] sm:max-w-[190px] object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 select-none"
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />
                 </div>
 
                 {/* Bonus Title */}
-                <h3 className="font-editorial text-xl sm:text-2xl font-bold text-[#FAF8F5] mb-2.5 leading-snug group-hover:text-[#E5C78A] transition-colors duration-200">
+                <h3 className="font-editorial text-xl sm:text-2xl font-bold text-[#FAF8F5] mb-2.5 leading-snug group-hover:text-[#E5C78A] transition-colors duration-200 min-h-[56px] sm:min-h-[64px] flex items-center">
                   {bonus.title}
                 </h3>
 
                 {/* Bonus Description */}
-                <p className="text-xs sm:text-sm text-[#FAF8F5]/80 leading-relaxed font-light">
+                <p className="text-xs sm:text-sm text-[#FAF8F5]/80 leading-relaxed font-light min-h-[54px]">
                   {bonus.description}
                 </p>
               </div>
@@ -85,8 +85,8 @@ export default function BonusesSection() {
                   <CheckCircle2 className="w-4 h-4 text-[#C5A059]" />
                   <span>100% Gratuito na oferta</span>
                 </span>
-                <span className="text-[11px] text-white/50 uppercase tracking-wider font-semibold">
-                  Acesso Imediato
+                <span className="text-[11px] text-white/60 uppercase tracking-wider font-semibold">
+                  ACESSO IMEDIATO
                 </span>
               </div>
             </div>
