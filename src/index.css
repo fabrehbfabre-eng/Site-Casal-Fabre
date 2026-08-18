@@ -8,8 +8,8 @@
 
   body {
     font-family: var(--font-sans);
-    color: #1a2620;
-    background-color: #faf8f5;
+    color: #F4EFE5;
+    background-color: #180B0E;
     overflow-x: hidden;
   }
 
@@ -19,25 +19,33 @@
   }
 }
 
-/* Custom Gold & Deep Forest Utility Accents */
-.bg-deep-forest {
-  background-color: #081711;
+/* Custom Gold & Deep Wine Utility Accents */
+.bg-deep-wine {
+  background-color: #180B0E;
 }
 
-.bg-forest-card {
-  background-color: #0f241c;
+.bg-wine-card {
+  background-color: #241115;
+}
+
+.bg-wine-secondary {
+  background-color: #4A1722;
 }
 
 .text-gold-accent {
-  color: #c5a059;
+  color: #C9A24A;
+}
+
+.text-gold-light {
+  color: #E0C477;
 }
 
 .border-gold-subtle {
-  border-color: rgba(197, 160, 89, 0.25);
+  border-color: rgba(201, 162, 74, 0.25);
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #dfbe7a 0%, #c5a059 50%, #ae8435 100%);
+  background: linear-gradient(135deg, #E0C477 0%, #C9A24A 50%, #B28830 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -49,8 +57,8 @@
 
 .book-shadow {
   box-shadow: 
-    0 20px 40px -15px rgba(8, 23, 17, 0.35),
-    0 8px 16px -8px rgba(8, 23, 17, 0.2),
+    0 20px 40px -15px rgba(24, 11, 14, 0.55),
+    0 8px 16px -8px rgba(24, 11, 14, 0.35),
     inset 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 

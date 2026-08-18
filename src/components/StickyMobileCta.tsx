@@ -22,14 +22,14 @@ export default function StickyMobileCta() {
   return (
     <aside
       aria-label="Acesso Rápido de Compra"
-      className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#081711]/95 backdrop-blur-md border-t border-[#C5A059]/30 p-3 shadow-2xl animate-in slide-in-from-bottom duration-300"
+      className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#180B0E]/95 backdrop-blur-md border-t border-[#C9A24A]/30 p-3 shadow-2xl animate-in slide-in-from-bottom duration-300"
     >
       <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
         <div className="flex flex-col">
           <span className="text-[10px] uppercase tracking-wider text-white/60 font-medium">
             Ebook + 6 Bônus
           </span>
-          <span className="font-editorial text-xl font-bold text-[#E5C78A] leading-none">
+          <span className="font-editorial text-xl font-bold text-[#E0C477] leading-none">
             {PRODUCT_CONFIG.formattedPrice}
           </span>
         </div>
@@ -40,7 +40,7 @@ export default function StickyMobileCta() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackInitiateCheckout('sticky_mobile_bar')}
-          className="flex-1 inline-flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#DFBE7A] to-[#C5A059] text-[#081711] font-bold text-xs uppercase tracking-wider shadow-md active:scale-95 transition-transform"
+          className="flex-1 inline-flex items-center justify-center gap-1.5 py-3 px-4 rounded-xl bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] text-[#180B0E] font-bold text-xs uppercase tracking-wider shadow-md active:scale-95 transition-transform"
         >
           <span>{PRODUCT_CONFIG.ebookCtaText}</span>
           <ArrowRight className="w-3.5 h-3.5" />

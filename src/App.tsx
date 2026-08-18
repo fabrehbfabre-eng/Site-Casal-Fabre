@@ -24,7 +24,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#FAF8F5] text-[#1D2B24] flex flex-col selection:bg-[#C5A059]/25 selection:text-[#081711]">
+    <div className="min-h-screen bg-[#180B0E] text-[#F4EFE5] flex flex-col selection:bg-[#C9A24A]/25 selection:text-[#FAF8F5]">
       {/* Navegação Superior Fixa */}
       <Header />
 

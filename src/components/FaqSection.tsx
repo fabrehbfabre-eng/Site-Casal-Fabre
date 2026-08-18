@@ -15,11 +15,11 @@ export default function FaqSection() {
     <section
       id="faq"
       aria-labelledby="faq-title"
-      className="py-20 md:py-28 bg-[#081711] text-[#FAF8F5] relative overflow-hidden"
+      className="py-20 md:py-28 bg-[#180B0E] text-[#F4EFE5] relative overflow-hidden"
     >
       {/* Decorative Subtle Ambient Lighting */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C5A059]/5 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-80 h-80 bg-[#132C21]/40 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#C9A24A]/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-80 h-80 bg-[#4A1722]/40 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
@@ -27,21 +27,21 @@ export default function FaqSection() {
         <header className="text-center max-w-2xl mx-auto mb-14 sm:mb-16 space-y-4">
           
           {/* Eyebrow Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#132C21] border border-[#C5A059]/40 text-[#E5C78A] text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
-            <HelpCircle className="w-3.5 h-3.5 text-[#C5A059]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4A1722]/60 border border-[#C9A24A]/40 text-[#E0C477] text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
+            <HelpCircle className="w-3.5 h-3.5 text-[#C9A24A]" />
             <span>AINDA TEM DÚVIDAS?</span>
           </div>
 
           {/* Main Title */}
           <h2
             id="faq-title"
-            className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#FAF8F5] leading-tight"
+            className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#F4EFE5] leading-tight"
           >
             PERGUNTAS FREQUENTES
           </h2>
 
           {/* Subtitle */}
-          <p className="text-base sm:text-lg text-[#E3DCD3] font-light leading-relaxed">
+          <p className="text-base sm:text-lg text-[#F4EFE5]/80 font-light leading-relaxed">
             Reunimos as principais perguntas para você comprar com tranquilidade.
           </p>
         </header>
@@ -56,10 +56,10 @@ export default function FaqSection() {
             return (
               <div
                 key={faq.id}
-                className={`bg-[#0A1A14]/90 border rounded-2xl transition-all duration-300 overflow-hidden backdrop-blur-sm ${
+                className={`bg-[#241115]/90 border rounded-2xl transition-all duration-300 overflow-hidden backdrop-blur-sm ${
                   isOpen
-                    ? 'border-[#C5A059] shadow-[0_8px_24px_rgba(0,0,0,0.4)] bg-[#0D2119]/95'
-                    : 'border-[#C5A059]/20 hover:border-[#C5A059]/50'
+                    ? 'border-[#C9A24A] shadow-[0_8px_24px_rgba(0,0,0,0.4)] bg-[#4A1722]/40'
+                    : 'border-[#C9A24A]/20 hover:border-[#C9A24A]/50'
                 }`}
               >
                 <button
@@ -67,10 +67,10 @@ export default function FaqSection() {
                   onClick={() => toggleFaq(faq.id)}
                   aria-expanded={isOpen}
                   aria-controls={contentId}
-                  className="w-full px-5 sm:px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C5A059] transition-colors"
+                  className="w-full px-5 sm:px-6 py-4.5 sm:py-5 text-left flex items-center justify-between gap-4 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A24A] transition-colors"
                 >
-                  <span className="font-editorial font-medium text-base sm:text-lg text-[#FAF8F5] leading-snug">
-                    <span className="text-[#E5C78A]/60 mr-2 text-sm font-sans font-semibold">
+                  <span className="font-editorial font-medium text-base sm:text-lg text-[#F4EFE5] leading-snug">
+                    <span className="text-[#E0C477]/60 mr-2 text-sm font-sans font-semibold">
                       {String(index + 1).padStart(2, '0')}.
                     </span>
                     {faq.question}
@@ -80,8 +80,8 @@ export default function FaqSection() {
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 border transition-all duration-300 ${
                       isOpen
-                        ? 'bg-[#C5A059] border-[#C5A059] text-[#081711] rotate-180'
-                        : 'bg-[#132C21] border-[#C5A059]/30 text-[#E5C78A] hover:border-[#C5A059]'
+                        ? 'bg-[#C9A24A] border-[#C9A24A] text-[#180B0E] rotate-180'
+                        : 'bg-[#4A1722] border-[#C9A24A]/30 text-[#E0C477] hover:border-[#C9A24A]'
                     }`}
                     aria-hidden="true"
                   >
@@ -104,7 +104,7 @@ export default function FaqSection() {
                       : 'max-h-0 opacity-0 overflow-hidden px-5 sm:px-6 py-0'
                   }`}
                 >
-                  <p className="text-sm sm:text-base text-[#FAF8F5]/85 font-light leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#F4EFE5]/85 font-light leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -114,19 +114,19 @@ export default function FaqSection() {
         </div>
 
         {/* CTA Block After FAQ */}
-        <div className="mt-14 sm:mt-16 bg-[#0A1A14]/95 border border-[#C5A059]/40 rounded-3xl p-8 sm:p-10 text-center space-y-6 shadow-2xl relative overflow-hidden backdrop-blur-md">
+        <div className="mt-14 sm:mt-16 bg-[#241115]/95 border border-[#C9A24A]/40 rounded-3xl p-8 sm:p-10 text-center space-y-6 shadow-2xl relative overflow-hidden backdrop-blur-md">
           {/* Subtle Corner Glow */}
-          <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#C5A059]/15 rounded-full blur-2xl pointer-events-none" />
+          <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#C9A24A]/15 rounded-full blur-2xl pointer-events-none" />
 
           <div className="space-y-2">
-            <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#FAF8F5]">
+            <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F4EFE5]">
               Pronto para começar a cuidar mais da vida a dois?
             </h3>
           </div>
 
           <div className="flex items-center justify-center gap-4 text-[11px] text-white/60 pt-1">
             <div className="flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059]" />
+              <ShieldCheck className="w-3.5 h-3.5 text-[#C9A24A]" />
               <span>Garantia de 7 dias</span>
             </div>
             <span className="text-white/30">|</span>
@@ -141,7 +141,7 @@ export default function FaqSection() {
           Ainda ficou com alguma dúvida? Entre em contato pelo e-mail:{' '}
           <a
             href={`mailto:${PRODUCT_CONFIG.supportEmail}`}
-            className="text-[#E5C78A] font-medium underline hover:text-[#FAF8F5] transition-colors"
+            className="text-[#E0C477] font-medium underline hover:text-[#F4EFE5] transition-colors"
           >
             {PRODUCT_CONFIG.supportEmail}
           </a>

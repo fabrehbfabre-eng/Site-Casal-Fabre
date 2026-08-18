@@ -20,31 +20,31 @@ export default function OfferSection() {
   return (
     <section
       id="oferta"
-      className="py-20 md:py-28 bg-[#FAF8F5] text-[#1D2B24] relative overflow-hidden"
+      className="py-20 md:py-28 bg-[#180B0E] text-[#F4EFE5] relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#11281E]/10 border border-[#11281E]/15 text-[#11281E] text-xs font-semibold uppercase tracking-widest">
-            <Sparkles className="w-3.5 h-3.5 text-[#8C6D2D]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4A1722]/50 border border-[#C9A24A]/30 text-[#E0C477] text-xs font-semibold uppercase tracking-widest">
+            <Sparkles className="w-3.5 h-3.5 text-[#C9A24A]" />
             <span>Condição Oficial</span>
           </div>
 
-          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D2119] leading-tight">
+          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#F4EFE5] leading-tight">
             Leve o pacote completo
           </h2>
 
-          <p className="text-base sm:text-lg text-[#33463E] font-normal leading-relaxed max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-[#F4EFE5]/80 font-normal leading-relaxed max-w-2xl mx-auto">
             Uma decisão simples para dar ao seu relacionamento o cuidado, o carinho e a atenção que ele merece.
           </p>
         </div>
 
         {/* Master Offer Card */}
-        <div className="bg-[#0D2119] text-[#FAF8F5] rounded-3xl p-6 sm:p-10 md:p-12 border-2 border-[#C5A059] shadow-[0_25px_60px_rgba(13,33,25,0.35)] relative overflow-hidden">
+        <div className="bg-[#241115] text-[#F4EFE5] rounded-3xl p-6 sm:p-10 md:p-12 border-2 border-[#C9A24A] shadow-[0_25px_60px_rgba(24,11,14,0.6)] relative overflow-hidden">
           
           {/* Subtle Ambient Light */}
-          <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#C5A059]/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-80 h-80 bg-[#C9A24A]/15 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch relative z-10">
             
@@ -53,19 +53,19 @@ export default function OfferSection() {
               
               <div className="space-y-4">
                 <div className="border-b border-white/10 pb-4">
-                  <span className="text-xs uppercase tracking-widest text-[#E5C78A] font-bold block mb-1">
+                  <span className="text-xs uppercase tracking-widest text-[#E0C477] font-bold block mb-1">
                     Pacote Exclusivo Casal Fabre
                   </span>
-                  <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#FAF8F5] leading-snug">
+                  <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F4EFE5] leading-snug">
                     O Prazer da Vida a Dois + 6 Bônus
                   </h3>
                 </div>
 
                 <div className="space-y-2.5 pt-1">
                   {packageItems.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#FAF8F5]/90">
-                      <CheckCircle2 className="w-4 h-4 text-[#C5A059] shrink-0 mt-0.5" />
-                      <span className={idx === 0 ? 'font-semibold text-[#E5C78A]' : 'font-light'}>
+                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#F4EFE5]/90">
+                      <CheckCircle2 className="w-4 h-4 text-[#C9A24A] shrink-0 mt-0.5" />
+                      <span className={idx === 0 ? 'font-semibold text-[#E0C477]' : 'font-light'}>
                         {item}
                       </span>
                     </div>
@@ -75,20 +75,20 @@ export default function OfferSection() {
 
               {/* Extra reassurance badge */}
               <div className="pt-2 border-t border-white/10 flex items-center gap-2 text-xs text-white/70">
-                <Download className="w-4 h-4 text-[#C5A059] shrink-0" />
+                <Download className="w-4 h-4 text-[#C9A24A] shrink-0" />
                 <span>Download imediato disponível logo após a confirmação.</span>
               </div>
 
             </div>
 
             {/* Right: Pricing Box & Primary CTA */}
-            <div className="lg:col-span-5 bg-[#081711] border border-[#C5A059]/40 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-[#180B0E] border border-[#C9A24A]/40 rounded-2xl p-6 sm:p-8 space-y-6 shadow-xl flex flex-col justify-between">
               
               <div className="space-y-5 text-center">
                 
                 {/* Header Tag */}
                 <div className="pb-3 border-b border-white/10">
-                  <span className="inline-block px-3 py-1 rounded-full bg-[#132C21] border border-[#C5A059]/30 text-[11px] font-semibold uppercase tracking-wider text-[#E5C78A]">
+                  <span className="inline-block px-3 py-1 rounded-full bg-[#4A1722] border border-[#C9A24A]/30 text-[11px] font-semibold uppercase tracking-wider text-[#E0C477]">
                     Edição Digital Oficial
                   </span>
                 </div>
@@ -100,7 +100,7 @@ export default function OfferSection() {
                   </span>
                   <div className="flex items-baseline justify-center gap-1.5">
                     <span className="text-base sm:text-lg font-light text-white/70">R$</span>
-                    <span className="font-editorial text-4xl sm:text-5xl font-bold text-[#E5C78A] tracking-tight">
+                    <span className="font-editorial text-4xl sm:text-5xl font-bold text-[#E0C477] tracking-tight">
                       {PRODUCT_CONFIG.price}
                     </span>
                   </div>
@@ -117,10 +117,10 @@ export default function OfferSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackInitiateCheckout('offer_master_card')}
-                    className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl bg-gradient-to-r from-[#C5A059] via-[#DFBE7A] to-[#C5A059] text-[#081711] font-bold text-sm sm:text-base uppercase tracking-wider shadow-lg hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                    className="w-full inline-flex items-center justify-center gap-2.5 py-4 px-6 rounded-xl bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] text-[#180B0E] font-bold text-sm sm:text-base uppercase tracking-wider shadow-lg hover:shadow-2xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
                   >
                     <span>{PRODUCT_CONFIG.secondaryCtaText}</span>
-                    <ArrowRight className="w-4 h-4 text-[#081711] shrink-0" />
+                    <ArrowRight className="w-4 h-4 text-[#180B0E] shrink-0" />
                   </a>
                 </div>
 
@@ -129,15 +129,15 @@ export default function OfferSection() {
               {/* Trust Microcopy */}
               <div className="space-y-2.5 pt-4 border-t border-white/10 text-xs text-white/75">
                 <div className="flex items-center gap-2.5">
-                  <Zap className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
+                  <Zap className="w-3.5 h-3.5 text-[#C9A24A] shrink-0" />
                   <span>Acesso imediato no seu e-mail</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#C9A24A] shrink-0" />
                   <span>Garantia incondicional de {PRODUCT_CONFIG.guaranteeDays} dias</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <Lock className="w-3.5 h-3.5 text-[#C5A059] shrink-0" />
+                  <Lock className="w-3.5 h-3.5 text-[#C9A24A] shrink-0" />
                   <span>Pagamento 100% seguro via Kiwify</span>
                 </div>
               </div>

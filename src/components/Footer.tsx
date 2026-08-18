@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer id="main-footer" className="bg-[#050E0B] text-[#FAF8F5] border-t border-[#C5A059]/20 pt-16 pb-12">
+    <footer id="main-footer" className="bg-[#180B0E] text-[#F4EFE5] border-t border-[#C9A24A]/20 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top Footer Grid */}
@@ -25,10 +25,10 @@ export default function Footer() {
                 className="h-11 w-auto object-contain drop-shadow-md"
               />
               <div>
-                <span className="font-editorial text-xl font-bold tracking-widest text-[#FAF8F5] uppercase block">
+                <span className="font-editorial text-xl font-bold tracking-widest text-[#F4EFE5] uppercase block">
                   Casal Fabre
                 </span>
-                <span className="text-[10px] tracking-[0.2em] text-[#C5A059] uppercase">
+                <span className="text-[10px] tracking-[0.2em] text-[#C9A24A] uppercase">
                   O Prazer da Vida a Dois
                 </span>
               </div>
@@ -41,32 +41,32 @@ export default function Footer() {
 
           {/* Col 2: Navigation Links */}
           <div className="md:col-span-4 space-y-3">
-            <span className="text-xs uppercase tracking-widest text-[#E5C78A] font-bold block">
+            <span className="text-xs uppercase tracking-widest text-[#E0C477] font-bold block">
               Navegação Rápida
             </span>
             <ul className="space-y-2 text-xs sm:text-sm text-white/70">
               <li>
-                <a href="#sobre-o-livro" className="hover:text-[#E5C78A] transition-colors">
+                <a href="#sobre-o-livro" className="hover:text-[#E0C477] transition-colors">
                   Sobre o Livro
                 </a>
               </li>
               <li>
-                <a href="#capitulos" className="hover:text-[#E5C78A] transition-colors">
+                <a href="#capitulos" className="hover:text-[#E0C477] transition-colors">
                   Os 12 Capítulos
                 </a>
               </li>
               <li>
-                <a href="#bonus" className="hover:text-[#E5C78A] transition-colors">
+                <a href="#bonus" className="hover:text-[#E0C477] transition-colors">
                   Os 6 Bônus Inclusos
                 </a>
               </li>
               <li>
-                <a href="#autores" className="hover:text-[#E5C78A] transition-colors">
+                <a href="#autores" className="hover:text-[#E0C477] transition-colors">
                   Sobre o Casal Fabre
                 </a>
               </li>
               <li>
-                <a href="#faq" className="hover:text-[#E5C78A] transition-colors">
+                <a href="#faq" className="hover:text-[#E0C477] transition-colors">
                   Dúvidas Frequentes
                 </a>
               </li>
@@ -75,7 +75,7 @@ export default function Footer() {
 
           {/* Col 3: Security & Support */}
           <div className="md:col-span-3 space-y-3">
-            <span className="text-xs uppercase tracking-widest text-[#E5C78A] font-bold block">
+            <span className="text-xs uppercase tracking-widest text-[#E0C477] font-bold block">
               Atendimento & Suporte
             </span>
             <p className="text-xs text-white/60 leading-relaxed">
@@ -83,7 +83,7 @@ export default function Footer() {
             </p>
             <a
               href={`mailto:${PRODUCT_CONFIG.supportEmail}`}
-              className="inline-block text-xs sm:text-sm font-semibold text-[#E5C78A] hover:underline"
+              className="inline-block text-xs sm:text-sm font-semibold text-[#E0C477] hover:underline"
             >
               {PRODUCT_CONFIG.supportEmail}
             </a>
@@ -117,7 +117,7 @@ export default function Footer() {
           {/* Back to Top */}
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 text-xs text-[#E5C78A] hover:text-white transition-colors cursor-pointer"
+            className="flex items-center gap-1.5 text-xs text-[#E0C477] hover:text-white transition-colors cursor-pointer"
             aria-label="Voltar ao topo"
           >
             <span>Voltar ao topo</span>
@@ -135,20 +135,20 @@ export default function Footer() {
       {/* Legal Modal Component */}
       {modalType && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-[#FAF8F5] text-[#1D2B24] rounded-2xl max-w-2xl w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
+          <div className="bg-[#FAF8F5] text-[#180B0E] rounded-2xl max-w-2xl w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 shadow-2xl">
             <div className="flex items-center justify-between border-b border-[#D5C9B8] pb-3">
-              <h3 className="font-editorial text-2xl font-bold text-[#0D2119]">
+              <h3 className="font-editorial text-2xl font-bold text-[#180B0E]">
                 {modalType === 'termos' ? 'Termos de Uso' : 'Política de Privacidade'}
               </h3>
               <button
                 onClick={() => setModalType(null)}
-                className="w-8 h-8 rounded-full bg-[#E3DACD] text-[#0D2119] font-bold flex items-center justify-center hover:bg-[#C5A059] hover:text-[#081711] transition-colors"
+                className="w-8 h-8 rounded-full bg-[#E3DACD] text-[#180B0E] font-bold flex items-center justify-center hover:bg-[#C9A24A] hover:text-[#180B0E] transition-colors"
               >
                 ✕
               </button>
             </div>
 
-            <div className="text-xs sm:text-sm text-[#465A51] space-y-3 leading-relaxed">
+            <div className="text-xs sm:text-sm text-[#463A31] space-y-3 leading-relaxed">
               {modalType === 'termos' ? (
                 <>
                   <p>
@@ -185,7 +185,7 @@ export default function Footer() {
             <div className="pt-4 border-t border-[#D5C9B8] text-right">
               <button
                 onClick={() => setModalType(null)}
-                className="px-5 py-2 rounded-xl bg-[#0D2119] text-[#FAF8F5] text-xs font-semibold hover:bg-[#163628] transition-colors"
+                className="px-5 py-2 rounded-xl bg-[#180B0E] text-[#F4EFE5] text-xs font-semibold hover:bg-[#4A1722] transition-colors"
               >
                 Entendi e Fechar
               </button>

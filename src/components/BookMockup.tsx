@@ -47,7 +47,7 @@ export default function BookMockup({
         <div className="absolute -bottom-6 left-4 right-2 h-8 bg-black/40 blur-xl rounded-full transform -rotate-1 pointer-events-none" />
 
         {/* Hardcover Outer Frame */}
-        <div className="relative w-full h-full rounded-r-md rounded-l-xs overflow-hidden bg-[#081711] border border-[#C5A059]/40 flex flex-col justify-between p-5 sm:p-6 text-center book-shadow">
+        <div className="relative w-full h-full rounded-r-md rounded-l-xs overflow-hidden bg-[#180B0E] border border-[#C9A24A]/40 flex flex-col justify-between p-5 sm:p-6 text-center book-shadow">
           
           {/* Subtle Metallic & Leather Sheen Overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-transparent to-white/10 pointer-events-none z-10" />
@@ -56,16 +56,16 @@ export default function BookMockup({
           <div className="absolute left-0 top-0 bottom-0 w-3.5 bg-gradient-to-r from-black/70 via-black/30 to-transparent z-20 book-spine-shadow border-r border-white/5" />
 
           {/* Golden Corner Trim Accents */}
-          <div className="absolute top-2 left-5 w-4 h-4 border-t border-l border-[#C5A059]/50 pointer-events-none" />
-          <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-[#C5A059]/50 pointer-events-none" />
-          <div className="absolute bottom-2 left-5 w-4 h-4 border-b border-l border-[#C5A059]/50 pointer-events-none" />
-          <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-[#C5A059]/50 pointer-events-none" />
+          <div className="absolute top-2 left-5 w-4 h-4 border-t border-l border-[#C9A24A]/50 pointer-events-none" />
+          <div className="absolute top-2 right-2 w-4 h-4 border-t border-r border-[#C9A24A]/50 pointer-events-none" />
+          <div className="absolute bottom-2 left-5 w-4 h-4 border-b border-l border-[#C9A24A]/50 pointer-events-none" />
+          <div className="absolute bottom-2 right-2 w-4 h-4 border-b border-r border-[#C9A24A]/50 pointer-events-none" />
 
           {/* Top Brand Header (Positioned above portrait without covering faces) */}
           <div className="relative z-10 pt-1">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#11281E]/90 border border-[#C5A059]/40 mb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D8B974] animate-pulse" />
-              <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-[#E5C78A] uppercase font-semibold">
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#241115]/90 border border-[#C9A24A]/40 mb-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E0C477] animate-pulse" />
+              <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-[#E0C477] uppercase font-semibold">
                 {isBonus ? (bonusNumber || 'BÔNUS EXCLUSIVO') : 'CASAL FABRE'}
               </span>
             </div>
@@ -79,48 +79,48 @@ export default function BookMockup({
             {!isBonus ? (
               <div className="space-y-2.5">
                 {/* Couple Photograph Frame (Tastefully styled with soft golden border) */}
-                <div className="relative mx-auto w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-gradient-to-b from-[#D8B974] via-[#785E2A] to-[#163628] shadow-inner">
-                  <div className="w-full h-full rounded-full overflow-hidden bg-[#0A1B14] relative">
+                <div className="relative mx-auto w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 bg-gradient-to-b from-[#E0C477] via-[#8A6D30] to-[#4A1722] shadow-inner">
+                  <div className="w-full h-full rounded-full overflow-hidden bg-[#241115] relative">
                     <img
                       src={customImage || PRODUCT_CONFIG.images.coupleRealPhoto}
                       alt="Casal Fabre | Heberson e Katia Fabre"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.05]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#081711]/40 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#180B0E]/40 via-transparent to-transparent" />
                   </div>
                 </div>
 
                 {/* Main Title */}
                 <div>
-                  <h3 className="font-editorial text-xl sm:text-2xl font-bold leading-tight tracking-tight text-[#FAF8F5] drop-shadow-md">
+                  <h3 className="font-editorial text-xl sm:text-2xl font-bold leading-tight tracking-tight text-[#F4EFE5] drop-shadow-md">
                     O Prazer da <br />
                     <span className="gold-gradient-text font-serif italic text-2xl sm:text-3xl">
                       Vida a Dois
                     </span>
                   </h3>
-                  <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-[#C5A059] to-transparent mx-auto mt-2 mb-1" />
-                  <p className="text-[9px] sm:text-[10px] text-[#FAF8F5]/80 font-light max-w-[200px] mx-auto line-clamp-2">
+                  <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-[#C9A24A] to-transparent mx-auto mt-2 mb-1" />
+                  <p className="text-[9px] sm:text-[10px] text-[#F4EFE5]/80 font-light max-w-[200px] mx-auto line-clamp-2">
                     Conexão, cumplicidade e novos hábitos na relação
                   </p>
                 </div>
               </div>
             ) : (
               <div className="py-4 px-2 space-y-2">
-                <div className="w-12 h-12 rounded-full bg-[#132C21] border border-[#C5A059]/40 flex items-center justify-center mx-auto text-[#E5C78A]">
+                <div className="w-12 h-12 rounded-full bg-[#4A1722] border border-[#C9A24A]/40 flex items-center justify-center mx-auto text-[#E0C477]">
                   <Sparkles className="w-5 h-5" />
                 </div>
-                <h3 className="font-editorial text-lg sm:text-xl font-bold text-[#FAF8F5] leading-snug">
+                <h3 className="font-editorial text-lg sm:text-xl font-bold text-[#F4EFE5] leading-snug">
                   {bonusTitle || 'Guia Prático'}
                 </h3>
-                <div className="w-8 h-[1px] bg-[#C5A059]/50 mx-auto" />
+                <div className="w-8 h-[1px] bg-[#C9A24A]/50 mx-auto" />
               </div>
             )}
           </div>
 
           {/* Bottom Book Footer */}
-          <div className="relative z-10 pt-2 border-t border-[#C5A059]/20">
-            <p className="text-[10px] sm:text-[11px] font-medium text-[#E5C78A] tracking-wider uppercase">
+          <div className="relative z-10 pt-2 border-t border-[#C9A24A]/20">
+            <p className="text-[10px] sm:text-[11px] font-medium text-[#E0C477] tracking-wider uppercase">
               {PRODUCT_CONFIG.author}
             </p>
             <p className="text-[8px] text-white/50 tracking-widest uppercase">

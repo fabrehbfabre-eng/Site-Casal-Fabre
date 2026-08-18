@@ -57,22 +57,22 @@ export default function Benefits() {
   return (
     <section
       id="beneficios"
-      className="py-20 md:py-28 bg-[#FAF8F5] text-[#1D2B24] relative overflow-hidden"
+      className="py-20 md:py-28 bg-[#180B0E] text-[#F4EFE5] relative overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#11281E]/10 border border-[#11281E]/15 text-[#11281E] text-xs font-semibold uppercase tracking-widest">
-            <Sparkles className="w-3.5 h-3.5 text-[#8C6D2D]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#4A1722]/50 border border-[#C9A24A]/30 text-[#E0C477] text-xs font-semibold uppercase tracking-widest">
+            <Sparkles className="w-3.5 h-3.5 text-[#C9A24A]" />
             <span>Transformação Real</span>
           </div>
 
-          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#0D2119] leading-tight">
+          <h2 className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#F4EFE5] leading-tight">
             O que vocês podem começar a transformar
           </h2>
 
-          <p className="text-base sm:text-lg text-[#33463E] font-normal leading-relaxed">
+          <p className="text-base sm:text-lg text-[#F4EFE5]/80 font-normal leading-relaxed">
             Sem fórmulas mágicas ou promessas exageradas. Apenas princípios sólidos, atitudes intencionais e a decisão mútua de cuidar do que é mais valioso.
           </p>
         </div>
@@ -84,18 +84,18 @@ export default function Benefits() {
             return (
               <div
                 key={idx}
-                className="bg-white border border-[#E3DACD] rounded-2xl p-6 hover:border-[#C5A059] hover:shadow-lg transition-all duration-200 flex flex-col justify-between group"
+                className="bg-[#241115] border border-[#C9A24A]/20 rounded-2xl p-6 hover:border-[#C9A24A] hover:shadow-lg transition-all duration-200 flex flex-col justify-between group"
               >
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-xl bg-[#FAF8F5] border border-[#E3DACD] flex items-center justify-center text-[#8C6D2D] group-hover:bg-[#0D2119] group-hover:text-[#E5C78A] transition-colors">
+                  <div className="w-10 h-10 rounded-xl bg-[#4A1722] border border-[#C9A24A]/30 flex items-center justify-center text-[#E0C477] group-hover:bg-[#C9A24A] group-hover:text-[#180B0E] transition-colors">
                     <Icon className="w-5 h-5" />
                   </div>
 
-                  <h3 className="font-semibold text-base text-[#0D2119] leading-snug">
+                  <h3 className="font-semibold text-base text-[#F4EFE5] leading-snug">
                     {item.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-[#5C6E65] leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#F4EFE5]/70 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
