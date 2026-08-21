@@ -7,6 +7,8 @@ import ChaptersSection from './components/ChaptersSection';
 import InsideBookPreview from './components/InsideBookPreview';
 import Benefits from './components/Benefits';
 import BonusesSection from './components/BonusesSection';
+import FinancialBonusesSection from './components/FinancialBonusesSection';
+import SpiritualBonusesSection from './components/SpiritualBonusesSection';
 import OfferSection from './components/OfferSection';
 import AboutAuthors from './components/AboutAuthors';
 import SocialProof from './components/SocialProof';
@@ -39,7 +41,7 @@ export default function App() {
         {/* Dobra 3: Apresentação do Método dos 5 Passos */}
         <ProductPresentation />
 
-        {/* Dobra 4: Os 12 Temas Reais do Livro */}
+        {/* Dobra 4: Os 15 Capítulos Oficiais do Livro */}
         <ChaptersSection />
 
         {/* Dobra 5: O que há dentro do livro (Experiência e Roteiros) */}
@@ -50,6 +52,12 @@ export default function App() {
 
         {/* Dobra 7: Os 6 Bônus Inclusos no Pacote */}
         <BonusesSection />
+
+        {/* Dobra 7.1: Bônus | Vida Financeira (Oferta Complementar) */}
+        <FinancialBonusesSection />
+
+        {/* Dobra 7.2: Bônus | Vida Espiritual (Oferta Complementar) */}
+        <SpiritualBonusesSection />
 
         {/* Dobra 8: Seção de Oferta do Pacote Completo */}
         <OfferSection />
