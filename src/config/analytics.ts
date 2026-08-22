@@ -99,8 +99,6 @@ export function trackViewContent() {
     const itemData = {
       content_name: 'O Prazer da Vida a Dois',
       content_category: 'Ebook & Relacionamento',
-      value: 19.97,
-      currency: 'BRL',
     };
 
     // Meta Pixel
@@ -111,13 +109,10 @@ export function trackViewContent() {
     // Google Analytics 4
     if (typeof window !== 'undefined' && typeof window.gtag === 'function' && ANALYTICS_CONFIG.googleAnalyticsId) {
       window.gtag('event', 'view_item', {
-        currency: 'BRL',
-        value: 19.97,
         items: [
           {
             item_name: 'O Prazer da Vida a Dois',
             item_category: 'Ebook',
-            price: 19.97,
             quantity: 1,
           },
         ],
@@ -132,15 +127,13 @@ export function trackViewContent() {
  * Evento: InitiateCheckout / begin_checkout
  * Disparado quando o usuário clica em qualquer CTA que o direciona para a página de pagamento (Kiwify).
  * 
- * @param ctaLocation Identificador da posição do botão na página (ex: 'header', 'offer', 'bonuses', 'sticky_mobile', 'chapters')
+ * @param ctaLocation Identificador da posição do botão na página (ex: 'hero', 'offer', 'bonuses', 'sticky_mobile', 'chapters')
  */
 export function trackInitiateCheckout(ctaLocation: string) {
   try {
     const checkoutData = {
-      content_name: 'O Prazer da Vida a Dois + 6 Bônus',
+      content_name: 'O Prazer da Vida a Dois + 12 Bônus',
       content_category: 'Ebook & Bônus',
-      value: 19.97,
-      currency: 'BRL',
       cta_location: ctaLocation,
     };
 
@@ -152,14 +145,11 @@ export function trackInitiateCheckout(ctaLocation: string) {
     // GA4: begin_checkout
     if (typeof window !== 'undefined' && typeof window.gtag === 'function' && ANALYTICS_CONFIG.googleAnalyticsId) {
       window.gtag('event', 'begin_checkout', {
-        currency: 'BRL',
-        value: 19.97,
         cta_location: ctaLocation,
         items: [
           {
-            item_name: 'O Prazer da Vida a Dois + 6 Bônus',
+            item_name: 'O Prazer da Vida a Dois + 12 Bônus',
             item_category: 'Ebook',
-            price: 19.97,
             quantity: 1,
           },
         ],

@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 import { PRODUCT_CONFIG } from '../config/offer';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,8 +8,9 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30);
+      setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -18,7 +19,7 @@ export default function Header() {
     { label: 'O Livro', href: '#sobre-o-livro' },
     { label: '15 Capítulos', href: '#capitulos' },
     { label: 'O Que Há Dentro', href: '#experiencia' },
-    { label: '6 Bônus', href: '#bonus' },
+    { label: '12 Bônus', href: '#bonus' },
     { label: 'Casal Fabre', href: '#autores' },
     { label: 'Dúvidas', href: '#faq' },
   ];
@@ -84,44 +85,40 @@ export default function Header() {
           />
         </div>
 
-        {/* Mobile Hamburger Toggle */}
+        {/* Mobile Hamburger Button */}
         <button
-          id="mobile-menu-toggle"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-[#F4EFE5] hover:text-[#E0C477] focus:outline-none focus:ring-2 focus:ring-[#C9A24A] rounded-lg"
-          aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          className="md:hidden p-2 rounded-lg text-[#F4EFE5] hover:text-[#E0C477] hover:bg-[#241115] focus:outline-none focus:ring-2 focus:ring-[#C9A24A]/50 transition-colors"
+          aria-label="Abrir Menu de Navegação"
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
 
-      {/* Mobile Drawer Navigation */}
+      {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-[#180B0E] border-b border-[#C9A24A]/20 px-6 py-6 space-y-4 animate-in fade-in slide-in-from-top-4 duration-200">
-          <nav className="flex flex-col space-y-3">
+        <div className="md:hidden bg-[#180B0E]/98 border-b border-[#C9A24A]/30 px-4 pt-3 pb-6 shadow-2xl backdrop-blur-xl animate-in slide-in-from-top duration-200">
+          <nav className="flex flex-col space-y-3 pt-2">
             {navLinks.map((link) => (
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="text-left text-base font-medium text-[#F4EFE5] hover:text-[#E0C477] py-2 border-b border-white/5 flex items-center justify-between"
+                className="text-left px-3 py-2.5 rounded-lg text-base font-medium text-[#F4EFE5] hover:text-[#E0C477] hover:bg-[#241115] transition-colors"
               >
-                <span>{link.label}</span>
-                <span className="text-[#C9A24A] text-xs">→</span>
+                {link.label}
               </button>
             ))}
-          </nav>
 
-          <div className="pt-4">
-            {/* Mobile Drawer CTA Transparent Space */}
-            <div
-              id="mobile-drawer-cta-slot"
-              className="w-full h-[48px] bg-transparent pointer-events-none select-none"
-              aria-hidden="true"
-            />
-            <p className="text-center text-[11px] text-[#F4EFE5]/70 mt-2">
-              Acesso digital imediato e vitalício ao conteúdo completo
-            </p>
-          </div>
+            {/* Mobile CTA Slot (Transparent layout space) */}
+            <div className="pt-3">
+              <div
+                id="mobile-header-cta-slot"
+                className="w-full h-[46px] bg-transparent pointer-events-none select-none"
+                aria-hidden="true"
+              />
+            </div>
+          </nav>
         </div>
       )}
     </header>

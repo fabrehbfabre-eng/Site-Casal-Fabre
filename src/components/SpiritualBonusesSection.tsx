@@ -20,7 +20,7 @@ export default function SpiritualBonusesSection() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4A1722]/60 border border-[#C9A24A]/40 text-[#E0C477] text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#C9A24A]" />
-            <span>OFERTA COMPLEMENTAR</span>
+            <span>BÔNUS EXCLUSIVOS</span>
           </div>
 
           {/* Main Title */}
@@ -78,14 +78,14 @@ export default function SpiritualBonusesSection() {
                 </p>
               </div>
 
-              {/* Card Footer: Included Indicator */}
+              {/* Card Footer: Included Indicator with Programmed Release */}
               <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs">
                 <span className="text-[#E0C477] font-medium flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-[#C9A24A]" />
                   <span>100% Gratuito na oferta</span>
                 </span>
                 <span className="text-[11px] text-white/60 uppercase tracking-wider font-semibold">
-                  ACESSO IMEDIATO
+                  LIBERAÇÃO PROGRAMADA
                 </span>
               </div>
             </div>

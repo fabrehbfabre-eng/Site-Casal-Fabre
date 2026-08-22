@@ -2,18 +2,43 @@ import { ShieldCheck, Zap, CheckCircle2, Sparkles, Lock, Download } from 'lucide
 import { PRODUCT_CONFIG } from '../config/offer';
 
 export default function OfferSection() {
-  const packageItems = [
-    "Livro Principal: O Prazer da Vida a Dois (15 Capítulos Oficiais)",
-    "Compromisso dos 40 Dias (Capítulo 14 com 4 Fases Práticas)",
-    "História Oficial do Casal Fabre (Capítulo 15)",
-    "Reflexões, Roteiros de Conversa a Dois e Práticas Semanais",
-    "Bônus 01: Como Reacender a Paixão",
-    "Bônus 02: 12 Mensagens Poderosas",
-    "Bônus 03: Como Lidar com Ciúmes e Insegurança",
-    "Bônus 04: Filhos de Outro Relacionamento | Como Lidar",
-    "Bônus 05: 3 Passos para Manter a Chama Acesa",
-    "Bônus 06: 12 Maneiras de Transformar o Cotidiano",
-    "Acesso digital imediato e vitalício aos arquivos PDF",
+  const packageSections = [
+    {
+      category: "LIVRO PRINCIPAL",
+      items: [
+        "Livro Principal: O Prazer da Vida a Dois (15 Capítulos Oficiais)",
+        "Compromisso dos 40 Dias (Capítulo 14 com 4 Fases Práticas)",
+        "História Oficial do Casal Fabre (Capítulo 15)",
+        "Reflexões, Roteiros de Conversa a Dois e Práticas Semanais",
+      ],
+    },
+    {
+      category: "6 BÔNUS PRINCIPAIS",
+      items: [
+        "Bônus 01: Como Reacender a Paixão",
+        "Bônus 02: 12 Mensagens Poderosas",
+        "Bônus 03: Como Lidar com Ciúmes e Insegurança",
+        "Bônus 04: Filhos de Outro Relacionamento | Como Lidar",
+        "Bônus 05: 3 Passos para Manter a Chama Acesa",
+        "Bônus 06: 12 Maneiras de Transformar o Cotidiano",
+      ],
+    },
+    {
+      category: "3 BÔNUS | VIDA FINANCEIRA",
+      items: [
+        "Bônus 07: Finanças do Casal | Como Organizar a Vida Financeira a Dois",
+        "Bônus 08: Método Canal IA | Como Criar um Canal com Inteligência Artificial",
+        "Bônus 09: Dinheiro a Dois | Como Construir uma Vida Financeira Próspera",
+      ],
+    },
+    {
+      category: "3 BÔNUS | VIDA ESPIRITUAL",
+      items: [
+        "Bônus 10: Fé a Dois | Como Construir um Relacionamento Mais Forte com Deus",
+        "Bônus 11: Um Propósito a Dois | Como Construir uma Vida com Amor e Propósito",
+        "Bônus 12: Juntos na Tempestade | Como Permanecer Unidos Quando a Vida Aperta",
+      ],
+    },
   ];
 
   return (
@@ -47,7 +72,7 @@ export default function OfferSection() {
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch relative z-10">
             
-            {/* Left: What is Included Checklist */}
+            {/* Left: What is Included Checklist (Structured by groups for 12 bonuses) */}
             <div className="lg:col-span-7 flex flex-col justify-between space-y-6">
               
               <div className="space-y-4">
@@ -56,26 +81,35 @@ export default function OfferSection() {
                     Pacote Exclusivo Casal Fabre
                   </span>
                   <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F4EFE5] leading-snug">
-                    O Prazer da Vida a Dois + 6 Bônus
+                    O Prazer da Vida a Dois + 12 Bônus
                   </h3>
                 </div>
 
-                <div className="space-y-2.5 pt-1">
-                  {packageItems.map((item, idx) => (
-                    <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#F4EFE5]/90">
-                      <CheckCircle2 className="w-4 h-4 text-[#C9A24A] shrink-0 mt-0.5" />
-                      <span className={idx === 0 || idx === 1 ? 'font-semibold text-[#E0C477]' : 'font-light'}>
-                        {item}
+                <div className="space-y-4 pt-1">
+                  {packageSections.map((sec, sIdx) => (
+                    <div key={sIdx} className="space-y-2">
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-[#E0C477] block">
+                        {sec.category}
                       </span>
+                      <div className="space-y-2">
+                        {sec.items.map((item, idx) => (
+                          <div key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-[#F4EFE5]/90">
+                            <CheckCircle2 className="w-4 h-4 text-[#C9A24A] shrink-0 mt-0.5" />
+                            <span className={sIdx === 0 && idx === 0 ? 'font-semibold text-[#E0C477]' : 'font-light'}>
+                              {item}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Extra reassurance badge */}
-              <div className="pt-2 border-t border-white/10 flex items-center gap-2 text-xs text-white/70">
+              <div className="pt-3 border-t border-white/10 flex items-center gap-2 text-xs text-white/70">
                 <Download className="w-4 h-4 text-[#C9A24A] shrink-0" />
-                <span>Download imediato disponível logo após a confirmação.</span>
+                <span>Formato digital em PDF de alta qualidade para leitura em qualquer dispositivo.</span>
               </div>
 
             </div>
@@ -95,7 +129,7 @@ export default function OfferSection() {
                 {/* Offer Headline */}
                 <div className="space-y-2 py-1">
                   <span className="text-xs uppercase tracking-wider text-[#E0C477] font-semibold block">
-                    Acesso Imediato & Vitalício
+                    Livro + 12 Bônus Inclusos
                   </span>
                   <p className="font-editorial text-xl sm:text-2xl font-bold text-[#F4EFE5]">
                     Comece hoje a cuidar da sua vida a dois
@@ -120,7 +154,7 @@ export default function OfferSection() {
               <div className="space-y-2.5 pt-4 border-t border-white/10 text-xs text-white/75">
                 <div className="flex items-center gap-2.5">
                   <Zap className="w-3.5 h-3.5 text-[#C9A24A] shrink-0" />
-                  <span>Acesso imediato no seu e-mail</span>
+                  <span>Acesso digital aos materiais</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <ShieldCheck className="w-3.5 h-3.5 text-[#C9A24A] shrink-0" />

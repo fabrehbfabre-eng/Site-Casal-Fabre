@@ -50,7 +50,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-1.5 text-xs text-[#F4EFE5]/90 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
                 <CheckCircle2 className="w-4 h-4 text-[#C9A24A]" />
-                <span>6 Bônus Inclusos</span>
+                <span>12 Bônus Inclusos</span>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export default function Hero() {
               <div className="space-y-2 pt-1 text-xs text-white/80">
                 <div className="flex items-center gap-2.5">
                   <Zap className="w-4 h-4 text-[#C9A24A] shrink-0" />
-                  <span>Acesso digital imediato e vitalício aos materiais em PDF</span>
+                  <span>Acesso digital aos materiais em PDF</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <ShieldCheck className="w-4 h-4 text-[#C9A24A] shrink-0" />
@@ -121,7 +121,7 @@ export default function Hero() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C9A24A]"></span>
                 </span>
                 <p className="text-xs text-[#F4EFE5] font-medium">
-                  Inclui <strong className="text-[#E0C477]">6 Guias Bônus Exclusivos</strong> no mesmo pacote
+                  Inclui <strong className="text-[#E0C477]">12 Guias Bônus Exclusivos</strong> no pacote completo
                 </p>
               </div>
             </div>

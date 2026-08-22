@@ -22,7 +22,7 @@ export default function SocialProof() {
           {/* Eyebrow Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#4A1722]/60 border border-[#C9A24A]/40 text-[#E0C477] text-xs font-bold uppercase tracking-[0.2em] shadow-sm">
             <MessageSquareHeart className="w-3.5 h-3.5 text-[#C9A24A]" />
-            <span>PROVA SOCIAL</span>
+            <span>DEPOIMENTOS</span>
           </div>
 
           {/* Main Title */}
@@ -30,12 +30,12 @@ export default function SocialProof() {
             id="social-proof-title"
             className="font-editorial text-3xl sm:text-4xl md:text-5xl font-bold text-[#F4EFE5] leading-tight"
           >
-            O que leitores estão dizendo sobre os livros do Casal Fabre
+            O que leitores dizem sobre as reflexões do Casal Fabre
           </h2>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg text-[#F4EFE5]/80 font-light leading-relaxed">
-            Relatos espontâneos de leitores que vivenciaram novas perspectivas e reflexões na vida a dois.
+            Relatos e impressões de quem encontrou inspiração e novas perspectivas para a vida a dois.
           </p>
         </header>
       </div>
@@ -112,11 +112,11 @@ export default function SocialProof() {
                   </p>
                 </div>
 
-                {/* Card Bottom: Verified Reader Indicator */}
+                {/* Card Bottom: Feedback Tag */}
                 <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-[#E0C477]/70 font-medium">
-                  <span>Leitor verificado</span>
-                  <span className="text-white/30">|</span>
-                  <span>Avaliação real</span>
+                  <span>Depoimento</span>
+                  <span className="text-white/30">•</span>
+                  <span>Experiência de Leitura</span>
                 </div>
               </article>
             );

@@ -4,7 +4,7 @@ export const FAQS_DATA: FaqItem[] = [
   {
     id: "faq-1",
     question: "O que está incluído no livro e o que recebo após a compra?",
-    answer: "Você recebe o ebook digital completo 'O Prazer da Vida a Dois' com todos os seus 15 capítulos oficiais (incluindo o Compromisso dos 40 Dias e o capítulo Nossa História), reflexões, conversas a dois e práticas semanais, além dos 6 bônus oficiais inclusos no mesmo pacote digital."
+    answer: "Você recebe o ebook digital completo 'O Prazer da Vida a Dois' com todos os seus 15 capítulos oficiais (incluindo o Compromisso dos 40 Dias e o capítulo Nossa História), reflexões, conversas a dois e práticas semanais, além de 12 bônus exclusivos inclusos no mesmo pacote digital."
   },
   {
     id: "faq-2",
@@ -18,8 +18,8 @@ export const FAQS_DATA: FaqItem[] = [
   },
   {
     id: "faq-4",
-    question: "Os 6 bônus estão incluídos no pacote?",
-    answer: "Sim. Todos os 6 bônus apresentados na página (guias práticos e materiais complementares do Casal Fabre) estão inclusos no pacote sem qualquer custo adicional."
+    question: "Quantos bônus estão incluídos no pacote?",
+    answer: "São 12 bônus ao todo: 6 bônus principais com acesso imediato (Como Reacender a Paixão, 12 Mensagens Poderosas, Como Lidar com Ciúmes e Insegurança, Filhos de Outro Relacionamento, 3 Passos para Manter a Chama Acesa, 12 Maneiras de Transformar o Cotidiano), além de 6 bônus complementares (3 da Vida Financeira e 3 da Vida Espiritual) com liberação programada diretamente na área de membros da plataforma."
   },
   {
     id: "faq-5",

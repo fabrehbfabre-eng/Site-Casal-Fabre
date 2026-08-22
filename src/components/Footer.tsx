@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#bonus" className="hover:text-[#E0C477] transition-colors">
-                  Os 6 Bônus Inclusos
+                  Os 12 Bônus Inclusos
                 </a>
               </li>
               <li>

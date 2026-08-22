@@ -1,6 +1,6 @@
 /**
  * Configurações Centrais Comerciais do Produto
- * Altere aqui qualquer informação de preço, checkout ou textos da oferta.
+ * Altere aqui qualquer informação de checkout ou textos da oferta.
  */
 
 export const KIWIFY_CHECKOUT_URL = "https://pay.kiwify.com.br/EhbLBi0";
@@ -14,7 +14,11 @@ export const PRODUCT_CONFIG = {
   checkoutUrl: KIWIFY_CHECKOUT_URL,
   guaranteeDays: 7,
   chaptersCount: 15,
-  bonusesCount: 6,
+  bonusesCount: 12,
+  mainBonusesCount: 6,
+  financialBonusesCount: 3,
+  spiritualBonusesCount: 3,
+  totalBonusesCount: 12,
   supportEmail: "faleconosco@casalfabre.com.br",
   
   authorsBio: "Somos Heberson e Katia Fabre, o Casal Fabre. Compartilhamos nossa história, nossas experiências e nossa visão sobre relacionamento, amor, fé e vida a dois.",
@@ -30,8 +34,8 @@ export const PRODUCT_CONFIG = {
   // Imagens do Casal Fabre, Capa do Ebook e Logo Oficial
   images: {
     officialLogo: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=406,fit=crop/YZ9j7Zz5nNsVj0vb/logo-oficial-fabre-xL115K7nPnC9uYzV.png",
-    mainProductImage: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=519,fit=crop/YZ9j7Zz5nNsVj0vb/capa-o-prazer-da-vida-a-dois-6zAZkyxhEpfdB0EK.png",
+    mainProductImage: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=566,fit=crop/YZ9j7Zz5nNsVj0vb/capa-para-kiwifi-naU42ARdO4eprp3o.png",
     coupleRealPhoto: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=525,fit=crop/YZ9j7Zz5nNsVj0vb/casal-fabre-1-photoroom-f1cKR1RJdl44WCEn.png",
-    bookCoverTexture: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=519,fit=crop/YZ9j7Zz5nNsVj0vb/capa-o-prazer-da-vida-a-dois-6zAZkyxhEpfdB0EK.png",
+    bookCoverTexture: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=566,fit=crop/YZ9j7Zz5nNsVj0vb/capa-para-kiwifi-naU42ARdO4eprp3o.png",
   }
 };

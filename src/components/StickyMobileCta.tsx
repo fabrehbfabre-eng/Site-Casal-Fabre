@@ -24,7 +24,7 @@ export default function StickyMobileCta() {
       <div className="flex items-center justify-between gap-3 max-w-md mx-auto">
         <div className="flex flex-col">
           <span className="text-[10px] uppercase tracking-wider text-white/60 font-medium">
-            15 Capítulos + 6 Bônus
+            15 Capítulos + 12 Bônus
           </span>
           <span className="font-editorial text-sm font-bold text-[#E0C477] leading-tight">
             O Prazer da Vida a Dois

@@ -1,9 +1,32 @@
 # Landing Page Premium | Casal Fabre
-## Produto: O Prazer da Vida a Dois (Ebook Digital + 6 Bônus)
+## Produto: O Prazer da Vida a Dois (Ebook Digital + 12 Bônus)
 
 Esta é a landing page oficial do produto editorial **"O Prazer da Vida a Dois"**, de **Heberson Fabre** (**Casal Fabre**).
 
 Desenvolvida com **React, TypeScript, Tailwind CSS e Vite**, a aplicação é **100% estática e independente**. Não possui dependências de servidor, banco de dados, Firebase ou APIs externas para funcionamento da página, podendo ser exportada para o GitHub e publicada em qualquer hospedagem estática (como **Hostinger**, Vercel, Netlify, Cloudflare Pages, etc.).
+
+---
+
+## Estrutura do Pacote Completo
+
+- **Livro Principal**: *O Prazer da Vida a Dois* (15 Capítulos Oficiais incluindo o Compromisso dos 40 Dias e a História Oficial do Casal Fabre)
+- **6 Bônus Principais**:
+  1. Como Reacender a Paixão
+  2. 12 Mensagens Poderosas para o Casal
+  3. Como Lidar com Ciúmes e Insegurança
+  4. Filhos de Outro Relacionamento | Como Lidar
+  5. 3 Passos para Manter a Chama Acesa
+  6. 12 Maneiras de Transformar o Cotidiano em Momentos Inesquecíveis
+- **3 Bônus | Vida Financeira**:
+  7. Finanças do Casal | Como Organizar a Vida Financeira a Dois
+  8. Método Canal IA | Como Criar um Canal com Inteligência Artificial
+  9. Dinheiro a Dois | Como Construir uma Vida Financeira Mais Leve e Próspera
+- **3 Bônus | Vida Espiritual**:
+  10. Fé a Dois | Como Construir um Relacionamento Mais Forte com Deus
+  11. Um Propósito a Dois | Como Construir uma Vida com Deus, Amor e Propósito
+  12. Juntos na Tempestade | Como Permanecer Unidos Quando a Vida Aperta
+
+**Total: 15 Capítulos + 12 Bônus Inclusos**
 
 ---
 
@@ -15,11 +38,10 @@ Desenvolvida com **React, TypeScript, Tailwind CSS e Vite**, a aplicação é **
 4. [Onde Encontrar a Pasta dist](#4-onde-encontrar-a-pasta-dist)
 5. [Como Publicar na Hostinger](#5-como-publicar-na-hostinger)
 6. [Como Alterar o Link da Kiwify (Checkout)](#6-como-alterar-o-link-da-kiwify)
-7. [Como Substituir Imagens (Fotos dos Autores / Mockup)](#7-como-substituir-imagens)
+7. [Como Substituir Imagens](#7-como-substituir-imagens)
 8. [Como Alterar Textos](#8-como-alterar-textos)
-9. [Como Alterar o Preço](#9-como-alterar-o-preço)
-10. [Como Rastrear Conversões (Meta Pixel / Google Analytics)](#10-como-rastrear-conversões)
-11. [Como Criar Nova Versão no GitHub](#11-como-criar-nova-versão-no-github)
+9. [Como Rastrear Conversões (Meta Pixel / Google Analytics)](#9-como-rastrear-conversões)
+10. [Como Criar Nova Versão no GitHub](#10-como-criar-nova-versão-no-github)
 
 ---
 
@@ -102,69 +124,26 @@ Substitua pelo novo link desejado. **Todos os botões da página serão atualiza
 
 ### 7. Como Substituir Imagens
 
-Para trocar a foto de Heberson e Kátia Fabre ou a textura do livro:
-
-1. Abra `src/config/offer.ts`.
-2. No objeto `PRODUCT_CONFIG.images`:
-```ts
-images: {
-  coupleRealPhoto: "URL_DA_SUA_FOTO_OU_CAMINHO_LOCAL",
-}
-```
-3. Se quiser usar uma foto local, coloque o arquivo na pasta `public/` (por exemplo: `public/casal-fabre.jpg`) e defina:
-```ts
-coupleRealPhoto: "/casal-fabre.jpg",
-```
+As imagens e mockups do produto e dos 12 bônus podem ser ajustadas em:
+- `src/config/offer.ts` (Logo, Foto dos Autores e Capa Principal)
+- `src/data/bonuses.ts` (Capas dos 12 Bônus digitais)
 
 ---
 
-### 8. Como Alterar Textos
+### 8. Como Rastrear Conversões (Meta Pixel / Google Analytics)
 
-- **Configurações Gerais, Títulos e Bio:** `src/config/offer.ts`
-- **Os 12 Capítulos (Nomes, Reflexões, Ações):** `src/data/chapters.ts`
-- **Os 6 Bônus (Nomes, Foco e Descrições):** `src/data/bonuses.ts`
-- **Dúvidas Frequentes (Perguntas e Respostas):** `src/data/faqs.ts`
+Configure os IDs no arquivo `.env` ou em `src/config/analytics.ts`:
+- `VITE_META_PIXEL_ID`
+- `VITE_GOOGLE_ANALYTICS_ID`
 
----
-
-### 9. Como Alterar o Preço
-
-Abra o arquivo `src/config/offer.ts` e altere:
-
-```ts
-price: "19,97",
-formattedPrice: "R$ 19,97",
-```
+Eventos suportados nativamente: `PageView`, `ViewContent` e `InitiateCheckout`.
 
 ---
 
-### 10. Como Rastrear Conversões
-
-Para instalar o **Meta Pixel (Facebook/Instagram)** ou **Google Analytics (GA4)**:
-
-Abra o arquivo:
-📁 `src/config/analytics.ts`
-
-Preencha com seus identificadores:
-```ts
-export const ANALYTICS_CONFIG = {
-  metaPixelId: '123456789012345', // Seu ID do Pixel
-  googleAnalyticsId: 'G-XXXXXXXXXX', // Seu ID do GA4
-};
-```
-Deixe vazio `''` se não for utilizar no momento.
-
----
-
-### 11. Como Criar Nova Versão no GitHub
+### 9. Como Criar Nova Versão no GitHub
 
 ```bash
 git add .
-git commit -m "feat: atualizacao da oferta e textos"
+git commit -m "feat: release de correcao com 12 bonus inclusos"
 git push origin main
 ```
-
----
-
-### Licença & Créditos
-© Casal Fabre — Heberson & Kátia Fabre. Todos os direitos reservados.
