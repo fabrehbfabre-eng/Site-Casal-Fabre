@@ -115,7 +115,7 @@ Abra o arquivo:
 
 Localize a linha:
 ```ts
-export const KIWIFY_CHECKOUT_URL = "https://pay.kiwify.com.br/EhbLBi0";
+export const KIWIFY_CHECKOUT_URL = "https://pay.kiwify.com.br/Nd0k7MP";
 ```
 
 Substitua pelo novo link desejado. **Todos os botões da página serão atualizados automaticamente.**

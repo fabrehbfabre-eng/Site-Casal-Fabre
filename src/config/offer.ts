@@ -3,7 +3,7 @@
  * Altere aqui qualquer informação de checkout ou textos da oferta.
  */
 
-export const KIWIFY_CHECKOUT_URL = "https://pay.kiwify.com.br/EhbLBi0";
+export const KIWIFY_CHECKOUT_URL = "https://pay.kiwify.com.br/Nd0k7MP";
 
 export const PRODUCT_CONFIG = {
   name: "O Prazer da Vida a Dois",
