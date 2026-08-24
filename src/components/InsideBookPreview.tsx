@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { BookOpen, Sparkles, MessageCircle, Calendar, CheckCircle, Quote } from 'lucide-react';
+import { BookOpen, Sparkles, MessageCircle, Calendar, CheckCircle, Quote, ArrowRight } from 'lucide-react';
+import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function InsideBookPreview() {
   const [activeTab, setActiveTab] = useState<'reflexao' | 'pratica' | 'conversa' | 'compromisso'>('compromisso');
@@ -204,16 +206,22 @@ export default function InsideBookPreview() {
             )}
           </div>
 
-          {/* Bottom Fast Action Transparent Space */}
+          {/* Bottom Fast Action CTA */}
           <div className="pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <span className="text-xs text-white/60 text-center sm:text-left">
-              Todo o conteúdo disponível em PDF de alta qualidade para celular e tablet
+              Livro oficial + 12 bônus por apenas <strong className="text-[#E0C477]">{PRODUCT_CONFIG.price}</strong>
             </span>
-            <div
-              id="inside-book-cta-slot"
-              className="w-full sm:w-[220px] h-[48px] bg-transparent pointer-events-none select-none"
-              aria-hidden="true"
-            />
+            <a
+              id="inside-book-cta-button"
+              href={PRODUCT_CONFIG.checkoutUrl}
+              onClick={() => trackInitiateCheckout('inside_book')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-2.5 px-5 rounded-xl font-bold text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 shadow-md transition-all text-xs uppercase tracking-wider cursor-pointer group"
+            >
+              <span>{PRODUCT_CONFIG.secondaryCtaText}</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#180B0E] group-hover:translate-x-0.5 transition-transform" />
+            </a>
           </div>
 
         </div>

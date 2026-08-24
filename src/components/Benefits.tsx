@@ -7,8 +7,11 @@ import {
   Compass, 
   Flame, 
   CalendarHeart, 
-  TrendingUp 
+  TrendingUp,
+  ArrowRight
 } from 'lucide-react';
+import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function Benefits() {
   const benefitsList = [
@@ -102,6 +105,21 @@ export default function Benefits() {
               </div>
             );
           })}
+        </div>
+
+        {/* Benefits Section CTA */}
+        <div className="mt-12 text-center pt-2">
+          <a
+            id="benefits-cta-button"
+            href={PRODUCT_CONFIG.checkoutUrl}
+            onClick={() => trackInitiateCheckout('benefits')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-4 px-8 rounded-xl font-bold text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 hover:shadow-[0_0_25px_rgba(201,162,74,0.45)] active:scale-[0.99] transition-all duration-200 text-xs sm:text-sm md:text-base tracking-wider uppercase shadow-xl cursor-pointer text-center group"
+          >
+            <span>{PRODUCT_CONFIG.primaryCtaText}</span>
+            <ArrowRight className="w-4 h-4 text-[#180B0E] group-hover:translate-x-1 transition-transform shrink-0" />
+          </a>
         </div>
 
       </div>

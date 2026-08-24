@@ -12,6 +12,7 @@ export const PRODUCT_CONFIG = {
   brand: "Casal Fabre",
   coAuthor: "Katia Fabre",
   checkoutUrl: KIWIFY_CHECKOUT_URL,
+  price: "R$ 37,90",
   guaranteeDays: 7,
   chaptersCount: 15,
   bonusesCount: 12,
@@ -26,10 +27,10 @@ export const PRODUCT_CONFIG = {
   heroHeadline: "O amor também mora nas pequenas atitudes",
   heroSubheadline: "Um livro prático para casais que desejam voltar a cuidar da relação por meio de conversas possíveis, pequenos gestos e a reconstrução de hábitos no dia a dia.",
   
-  primaryCtaText: "QUERO MEU EBOOK",
-  secondaryCtaText: "QUERO CONHECER O LIVRO",
-  ebookCtaText: "QUERO MEU EBOOK",
-  finalCtaText: "QUERO O PRAZER DA VIDA A DOIS",
+  primaryCtaText: "QUERO TRANSFORMAR MEU RELACIONAMENTO",
+  secondaryCtaText: "QUERO O LIVRO + 12 BÔNUS",
+  ebookCtaText: "QUERO TRANSFORMAR MEU RELACIONAMENTO",
+  finalCtaText: "QUERO TRANSFORMAR MEU RELACIONAMENTO",
   
   // Imagens do Casal Fabre, Capa do Ebook e Logo Oficial
   images: {

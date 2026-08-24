@@ -1,5 +1,6 @@
 import { PRODUCT_CONFIG } from '../config/offer';
-import { ShieldCheck, Zap, CheckCircle2, Sparkles } from 'lucide-react';
+import { ShieldCheck, Zap, CheckCircle2, Sparkles, ArrowRight } from 'lucide-react';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function Hero() {
   return (
@@ -72,13 +73,42 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Primary Hero CTA Reserved Space (Empty, transparent, exact layout reservation) */}
+              {/* Price Display */}
+              <div className="pt-2 pb-1 text-center space-y-1 bg-[#180B0E]/60 border border-[#C9A24A]/25 rounded-2xl p-4">
+                <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#E0C477] font-semibold block">
+                  POR APENAS
+                </span>
+                <div className="flex items-baseline justify-center gap-1.5 leading-none">
+                  <span className="font-playfair text-xl sm:text-2xl font-bold text-[#E0C477] drop-shadow-[0_2px_8px_rgba(201,162,74,0.25)]">
+                    R$
+                  </span>
+                  <span className="font-playfair text-[40px] sm:text-[50px] font-bold text-[#E0C477] tracking-tight leading-none drop-shadow-[0_2px_12px_rgba(201,162,74,0.3)]">
+                    37,90
+                  </span>
+                </div>
+                <div className="flex items-center justify-center gap-2 pt-0.5">
+                  <span className="text-[11px] text-white/70 font-light">
+                    Pagamento único com acesso vitalício
+                  </span>
+                  <span className="text-[10px] text-[#E0C477] font-semibold bg-[#4A1722] border border-[#C9A24A]/30 px-2 py-0.5 rounded-full">
+                    12 Bônus Inclusos
+                  </span>
+                </div>
+              </div>
+
+              {/* Primary Hero CTA Button */}
               <div className="pt-1">
-                <div
-                  id="hero-primary-cta-slot"
-                  className="w-full h-[56px] bg-transparent pointer-events-none select-none"
-                  aria-hidden="true"
-                />
+                <a
+                  id="hero-primary-cta"
+                  href={PRODUCT_CONFIG.checkoutUrl}
+                  onClick={() => trackInitiateCheckout('hero')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-4 px-5 rounded-xl font-bold text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 hover:shadow-[0_0_25px_rgba(201,162,74,0.4)] active:scale-[0.99] transition-all duration-200 text-xs sm:text-sm md:text-base tracking-wider uppercase shadow-xl cursor-pointer text-center group"
+                >
+                  <span>{PRODUCT_CONFIG.primaryCtaText}</span>
+                  <ArrowRight className="w-4 h-4 text-[#180B0E] group-hover:translate-x-1 transition-transform shrink-0" />
+                </a>
               </div>
 
               {/* Highlights & Security Microcopy */}

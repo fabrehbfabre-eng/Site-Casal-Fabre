@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PRODUCT_CONFIG } from '../config/offer';
 import { Menu, X } from 'lucide-react';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,13 +77,18 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Header CTA Space (Invisible transparent layout reservation) */}
+        {/* Header CTA Button */}
         <div className="hidden sm:flex items-center gap-4">
-          <div
-            id="header-cta-slot"
-            className="w-[155px] h-[38px] bg-transparent pointer-events-none select-none"
-            aria-hidden="true"
-          />
+          <a
+            id="header-cta-button"
+            href={PRODUCT_CONFIG.checkoutUrl}
+            onClick={() => trackInitiateCheckout('header')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 shadow-md hover:shadow-[0_0_15px_rgba(201,162,74,0.35)] transition-all cursor-pointer"
+          >
+            QUERO O LIVRO
+          </a>
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -110,13 +116,21 @@ export default function Header() {
               </button>
             ))}
 
-            {/* Mobile CTA Slot (Transparent layout space) */}
+            {/* Mobile CTA Button */}
             <div className="pt-3">
-              <div
-                id="mobile-header-cta-slot"
-                className="w-full h-[46px] bg-transparent pointer-events-none select-none"
-                aria-hidden="true"
-              />
+              <a
+                id="mobile-header-cta-button"
+                href={PRODUCT_CONFIG.checkoutUrl}
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  trackInitiateCheckout('header_mobile');
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center py-3 px-4 rounded-xl text-xs font-bold uppercase tracking-wider text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 shadow-md transition-all text-center cursor-pointer"
+              >
+                QUERO O LIVRO + 12 BÔNUS ({PRODUCT_CONFIG.price})
+              </a>
             </div>
           </nav>
         </div>

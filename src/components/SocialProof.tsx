@@ -1,6 +1,8 @@
 import React from 'react';
 import { TESTIMONIALS_DATA } from '../data/testimonials';
-import { Star, MessageSquareHeart, Quote } from 'lucide-react';
+import { Star, MessageSquareHeart, Quote, ArrowRight } from 'lucide-react';
+import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function SocialProof() {
   // Duplicamos a lista para criar o loop contínuo perfeitamente fluido e infinito
@@ -121,6 +123,21 @@ export default function SocialProof() {
               </article>
             );
           })}
+        </div>
+
+        {/* Testimonials Section Bottom CTA */}
+        <div className="mt-12 text-center pt-2 max-w-xl mx-auto px-4">
+          <a
+            id="testimonials-cta-button"
+            href={PRODUCT_CONFIG.checkoutUrl}
+            onClick={() => trackInitiateCheckout('social_proof')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-4 px-8 rounded-xl font-bold text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 hover:shadow-[0_0_25px_rgba(201,162,74,0.45)] active:scale-[0.99] transition-all duration-200 text-xs sm:text-sm md:text-base tracking-wider uppercase shadow-xl cursor-pointer text-center group"
+          >
+            <span>{PRODUCT_CONFIG.primaryCtaText}</span>
+            <ArrowRight className="w-4 h-4 text-[#180B0E] group-hover:translate-x-1 transition-transform shrink-0" />
+          </a>
         </div>
       </div>
     </section>

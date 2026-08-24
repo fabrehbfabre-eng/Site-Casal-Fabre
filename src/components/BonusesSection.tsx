@@ -1,6 +1,8 @@
 import React from 'react';
 import { BONUSES_DATA } from '../data/bonuses';
-import { Sparkles, CheckCircle2, ShieldCheck, Gift } from 'lucide-react';
+import { Sparkles, CheckCircle2, ShieldCheck, Gift, ArrowRight } from 'lucide-react';
+import { PRODUCT_CONFIG } from '../config/offer';
+import { trackInitiateCheckout } from '../config/analytics';
 
 export default function BonusesSection() {
   return (
@@ -92,7 +94,7 @@ export default function BonusesSection() {
           ))}
         </div>
 
-        {/* Action Box with Transparent Reserved CTA Area */}
+        {/* Action Box with CTA Button and Price */}
         <div className="bg-[#241115]/95 border border-[#C9A24A]/40 rounded-3xl p-8 sm:p-10 max-w-2xl mx-auto shadow-2xl text-center space-y-6 relative overflow-hidden backdrop-blur-md">
           {/* Subtle Corner Glow */}
           <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#C9A24A]/15 rounded-full blur-2xl pointer-events-none" />
@@ -103,22 +105,46 @@ export default function BonusesSection() {
               PACOTE COMPLETO DIGITAL
             </span>
             <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F4EFE5]">
-              O Livro Oficial + Todos os 6 Bônus Inclusos
+              O Livro Oficial + Todos os 12 Bônus Inclusos
             </h3>
           </div>
 
+          {/* Price display in bonus section */}
+          <div className="py-4 border-y border-white/10 space-y-1.5 text-center">
+            <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#E0C477] font-semibold block">
+              POR APENAS
+            </span>
+            <div className="flex items-baseline justify-center gap-1.5 leading-none">
+              <span className="font-playfair text-xl sm:text-2xl md:text-[28px] font-bold text-[#E0C477] drop-shadow-[0_2px_8px_rgba(201,162,74,0.25)]">
+                R$
+              </span>
+              <span className="font-playfair text-[40px] sm:text-[52px] font-bold text-[#E0C477] tracking-tight leading-none drop-shadow-[0_2px_14px_rgba(201,162,74,0.3)]">
+                37,90
+              </span>
+            </div>
+            <span className="text-xs text-white/70 font-light block">
+              Acesso imediato ao livro digital + 12 bônus exclusivos
+            </span>
+          </div>
+
           {/* Informational Message */}
-          <p className="text-xs sm:text-sm text-[#F4EFE5]/80 font-light max-w-lg mx-auto leading-relaxed border-t border-white/10 pt-4">
-            Os 6 bônus são liberados no seu e-mail junto com o livro completo logo após a confirmação da compra.
+          <p className="text-xs sm:text-sm text-[#F4EFE5]/80 font-light max-w-lg mx-auto leading-relaxed">
+            Todos os bônus são liberados no seu e-mail junto com o livro completo logo após a confirmação da compra.
           </p>
 
-          {/* Reserved CTA Transparent Space */}
+          {/* Primary CTA Button */}
           <div className="pt-2 flex justify-center">
-            <div
-              id="bonus-section-cta-slot"
-              className="w-full sm:w-[360px] h-[56px] bg-transparent pointer-events-none select-none"
-              aria-hidden="true"
-            />
+            <a
+              id="bonus-section-cta"
+              href={PRODUCT_CONFIG.checkoutUrl}
+              onClick={() => trackInitiateCheckout('bonuses')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-4 px-8 rounded-xl font-bold text-[#180B0E] bg-gradient-to-r from-[#C9A24A] via-[#E0C477] to-[#C9A24A] hover:brightness-110 hover:shadow-[0_0_25px_rgba(201,162,74,0.45)] active:scale-[0.99] transition-all duration-200 text-xs sm:text-sm md:text-base tracking-wider uppercase shadow-xl cursor-pointer text-center group"
+            >
+              <span>{PRODUCT_CONFIG.primaryCtaText}</span>
+              <ArrowRight className="w-4 h-4 text-[#180B0E] group-hover:translate-x-1 transition-transform shrink-0" />
+            </a>
           </div>
 
           {/* Micro Trust Indicators */}
